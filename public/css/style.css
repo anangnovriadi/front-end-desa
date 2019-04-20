@@ -1,0 +1,57 @@
+body {
+	font-family: 'Pontano Sans', sans-serif;
+	color: #444;
+}
+
+.cus-con {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.logo {
+	width: 200px;
+	height: auto;
+	background-size: cover;
+}
+
+.logo-2 {
+	width: 52px;
+	height: auto;
+}
+
+.hov {
+	letter-spacing: normal;
+}
+
+.hov:hover {
+	padding: 8px;
+	border-radius: 2px;
+	background: #018abe;
+	color: white;
+}
+
+.nav-col {
+	background-color: #001b48 !important;
+    max-height: 65px;
+    border-bottom: 1px solid white;
+}
+
+.gray-cus {
+	color: #444;
+}
+
+.banner-car {
+	max-height: 200px;
+}
+
+.banner {
+	width: 100%;
+}
+
+.banner-img {
+	height: 320px;
+}
+
+.banner-left {
+	height: 152px;
+}
