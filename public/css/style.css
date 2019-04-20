@@ -55,3 +55,97 @@ body {
 .banner-left {
 	height: 152px;
 }
+
+.pcus-top {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.pcus {
+	padding-right: 64px;
+	padding-left: 64px;
+}
+
+.pcus2 {
+	padding: 40px 85px 40px 85px;
+}
+
+.bag-frm {
+	border-radius: 2px;
+	background-color: #f8f9fa;
+}
+
+.module {
+  	background-size: cover;
+  	border-radius: 4px;
+  	width: 100%;
+  	height: 200px;
+  	position: relative;
+  	float: left;
+}
+
+.mage p {
+	text-align: center;
+ 	font-weight: 600;
+  	color: white;
+  	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+/*Running Text */
+
+marquee {
+	margin-top: 5px;
+	width: 100%;
+}
+
+.runtext-container {
+	background-color: #ddddff;
+	*background-color: #ccf;
+	background-image:-moz-linear-gradient(top,#ccf,#fff);
+	background-image:-webkit-gradient(linear,0 0,0 100%,from(#ccf),to(#fff));
+	background-image:-webkit-linear-gradient(top,#ccf,#fff);
+	background-image:-o-linear-gradient(top,#ccf,#fff);
+	background-image:linear-gradient(to bottom,#ccf,#fff);
+	background-repeat:repeat-x;
+	border: 2px solid rgba(0,0,0,.05);
+	border-radius: 4px;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: visible;
+	padding: 0 3px 0 3px;
+}
+
+.main-runtext {
+	margin: 0 auto;
+	overflow: visible;
+	position: relative;
+}
+
+.runtext-container .holder {
+	position: relative;
+	overflow: visible;
+	display:inline;
+	float:left;
+}
+
+.runtext-container .holder .text-container {
+	display:inline;
+}
+
+.runtext-container .holder a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #018abe;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.25);
+	line-height: -0.5em;
+	font-size:16px;
+}
+
+.runtext-container .holder a:hover{
+	text-decoration: none;
+	color: #6600ff;
+}

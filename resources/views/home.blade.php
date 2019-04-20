@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Website - Pemkab</title>
     <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg nav-col bg-light cus-con">
+	<nav class="navbar navbar-expand-lg fixed nav-col bg-light cus-con">
 	  	<div class="mx-auto text-center">
 	  		<p class="m-0 text-white font-weight-bold">Pemeritah Desa Cisaruah</p>
 	  		<p class="m-0 text-white font-weight-bold">Jln. R.Natapraja No. 01 Cibodas Desa Cisarua Kec. Nagrak, Kabupaten Sukabumi</p>
@@ -52,8 +53,8 @@
 	  	<img src="{{ asset('img/logo-cisarua.png') }}" class="logo" alt="">
 	</nav>
 
-	<section class="mt-4">
-		<div class="row container-fluid mx-auto">
+	<section class="mt-4 mb-4">
+		<div class="row container-fluid mx-auto pcus-top">
 			<div class="col-md-10">
 				<div class="banner-car">
 					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -93,8 +94,103 @@
 				</div>
 			</div>
 		</div>
-		
-		
+		<div class="container-fluid pcus">
+			<div class="runtext-container">
+				<div class="main-runtext">
+					<marquee direction="" onmouseover="this.stop();" onmouseout="this.start();">
+						<div class="holder">
+						    <div class="text-container">
+						   		<i class="fa fa-info-circle" aria-hidden="true"></i> <a data-fancybox-group="gallery" class="fancybox" href="images/runtext/card.jpg" title="Electricians must provide business address and phone number">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+						    </div>
+						    <div class="text-container">
+						   		<i class="fa fa-info-circle" aria-hidden="true"></i> <a data-fancybox-group="gallery" class="fancybox" href="images/runtext/buildings.jpg" title="All jobs 70Amps and over require an electrical drawing done by a certified engineer">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+						    </div>
+						    <div class="text-container">
+						   		<i class="fa fa-info-circle" aria-hidden="true"></i> <a data-fancybox-group="gallery" class="fancybox" href="images/runtext/paid_electrician.jpg" title="Electrical work charges should only be paid to a licensed electrician">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+						    </div>
+						</div>
+					</marquee>
+				</div>
+			</div>
+		</div>
+		<div class="pt-5 container-fluid pcus">
+			<div class="m-auto">
+				<div class="text-center pb-3">
+					<h3>Pelayanan Publik</h3>
+				</div>
+				<div class="bag-frm">
+					<div class="pcus2">
+						<div class="pb-4 text-center">
+							<p class="font-weight-bold">(Form Pelayanan Surat)</p>
+						</div>
+						<form>
+							<div class="form-group row">
+							  	<label for="staticEmail" class="col-sm-2 col-form-label">NIK / Nama</label>
+						    	<div class="col-sm-10">
+						      		<input type="text" class="form-control" id="staticEmail" value="NIK / Nama.com">
+						    	</div>
+					    	</div>
+					    	<div class="form-group row">
+						    	<label for="staticEmail" class="col-sm-2 col-form-label">Jenis Layanan</label>
+						    	<div class="col-sm-10">
+						      		<input type="text" class="form-control" id="staticEmail" value="Jenis Layanan.com">
+						    	</div>
+						    </div>
+						    <div class="form-group row">
+						    	<label for="staticEmail" class="col-sm-2 col-form-label">Judul Pengajuan</label>
+						    	<div class="col-sm-10">
+						      		<input type="text" class="form-control" id="staticEmail" value="Judul Pengajuan">
+						    	</div>
+						    </div>
+						    <div class="form-group row">
+						    	<label for="staticEmail" class="col-sm-2 col-form-label">Captcha</label>
+						    	<div class="col-sm-10">
+						      		<input type="text" class="form-control" id="staticEmail" value="Captcha">
+						    	</div>
+						    </div>
+						    <div class="form-group row">
+						    	<label for="staticEmail" class="col-sm-2 col-form-label">Keterangan</label>
+						    	<div class="col-sm-10">
+						      		<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+						    	</div>
+						    </div>
+						    <div class="text-center pt-3">
+						    	<button type="button" class="btn btn-primary">Submit</button>
+						    </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pt-5 container-fluid pcus">
+			<div class="m-auto">
+				<div class="text-center pb-3">
+					<h3>Potensi Desa</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="module mage" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/pertanian.jpg') }});">
+					  	<p>Potensi Pertanian</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="module mage" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/perikanan.jpg') }});">
+					  	<p>Potensi Perikanan</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="module mage" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/peternakan.jpg') }});">
+					  	<p>Potensi Peternakan</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="module mage" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/jalan.jpg') }});">
+					  	<p>Potensi Bumdes</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
