@@ -3,7 +3,7 @@
 <head>
  	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Website - Pemkab</title>
+	<title>Website - Pemeritah Desa Cisaruah</title>
     <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
@@ -191,7 +191,73 @@
 				</div>
 			</div>
 		</div>
+		<div class="pt-5 container-fluid pcus">
+			<div class="m-auto">
+				<div class="text-center pb-3">
+					<h3>Data Informasi</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="module2 mage2" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/desa.jpg') }});">
+					  	<p>Data Desa Cisarua</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+					  	<iframe width="auto" height="300" src="https://www.youtube.com/embed/yuCf__9d6Yg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
+
+	<footer id="footer" class="bg-dark mt-5">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4 text-center">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Profil Desa</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Pelayanan Publik</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Portal Berita</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Channel Youtube</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 text-center">
+					<h5>Peta Lokasi</h5>
+					<div class="gmap_canvas">
+						<iframe width="auto" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=cianjur&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+							<a href="https://www.emojilib.com"></a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 text-center">
+					<h5>Link Terkait</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Pemerintah Sukabumi</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Pemerintah Cianjur</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p class="h6">&copy Pemeritah Desa Cisaruah</p>
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="{{ asset('bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
