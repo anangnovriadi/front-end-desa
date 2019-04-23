@@ -67,51 +67,123 @@
 	</div>
 	<div class="pt-5 container-fluid pcus">
 		<div class="m-auto">
-			<div class="text-center pb-3">
-				<h3>Pelayanan Publik</h3>
-			</div>
-			<div class="bag-frm">
-				<div class="pcus2">
-					<div class="pb-4 text-center">
-						<p class="font-weight-bold">(Form Pelayanan Surat)</p>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="text-center pb-3">
+						<h3>Pelayanan Publik</h3>
 					</div>
-					<form>
-						<div class="form-group row">
-						  	<label for="staticEmail" class="col-sm-2 col-form-label">NIK / Nama</label>
-					    	<div class="col-sm-10">
-					      		<input type="text" class="form-control" id="staticEmail" value="NIK / Nama.com">
-					    	</div>
-				    	</div>
-				    	<div class="form-group row">
-					    	<label for="staticEmail" class="col-sm-2 col-form-label">Jenis Layanan</label>
-					    	<div class="col-sm-10">
-					      		<input type="text" class="form-control" id="staticEmail" value="Jenis Layanan.com">
-					    	</div>
-					    </div>
-					    <div class="form-group row">
-					    	<label for="staticEmail" class="col-sm-2 col-form-label">Judul Pengajuan</label>
-					    	<div class="col-sm-10">
-					      		<input type="text" class="form-control" id="staticEmail" value="Judul Pengajuan">
-					    	</div>
-					    </div>
-					    <div class="form-group row">
-					    	<label for="staticEmail" class="col-sm-2 col-form-label">Captcha</label>
-					    	<div class="col-sm-10">
-					      		<input type="text" class="form-control" id="staticEmail" value="Captcha">
-					    	</div>
-					    </div>
-					    <div class="form-group row">
-					    	<label for="staticEmail" class="col-sm-2 col-form-label">Keterangan</label>
-					    	<div class="col-sm-10">
-					      		<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-					    	</div>
-					    </div>
-					    <div class="text-center pt-3">
-					    	<button type="button" class="btn btn-primary">Submit</button>
-					    </div>
-					</form>
+					<div class="bag-frm">
+						<div class="pcus2">
+							<div class="pb-4 text-center">
+								<p class="font-weight-bold">(Form Pelayanan Surat)</p>
+							</div>
+							<form>
+								<div class="form-group row">
+								  	<label for="staticEmail" class="col-sm-3 col-form-label">NIK / Nama</label>
+							    	<div class="col-sm-9">
+							      		<input type="text" class="form-control" id="staticEmail" value="NIK / Nama">
+							    	</div>
+						    	</div>
+						    	<div class="form-group row">
+							    	<label for="staticEmail" class="col-sm-3 col-form-label">Jenis Layanan</label>
+							    	<div class="col-sm-9">
+							      		<input type="text" class="form-control" id="staticEmail" value="Jenis Layanan">
+							    	</div>
+							    </div>
+							    <div class="form-group row">
+							    	<label for="staticEmail" class="col-sm-3 col-form-label">Judul Pengajuan</label>
+							    	<div class="col-sm-9">
+							      		<input type="text" class="form-control" id="staticEmail" value="Judul Pengajuan">
+							    	</div>
+							    </div>
+							    <div class="form-group row">
+							    	<label for="staticEmail" class="col-sm-3 col-form-label">Captcha</label>
+							    	<div class="col-sm-9">
+							      		<input type="text" class="form-control" id="staticEmail" value="Captcha">
+							    	</div>
+							    </div>
+							    <div class="form-group row">
+							    	<label for="staticEmail" class="col-sm-3 col-form-label">Keterangan</label>
+							    	<div class="col-sm-9">
+							      		<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+							    	</div>
+							    </div>
+							    <div class="text-center pt-3">
+							    	<button type="button" class="btn btn-primary">Submit</button>
+							    </div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="text-center pb-3">
+						<h3>Cek Data</h3>
+					</div>
+					<div class="bag-frm">
+						<div class="pcus2">
+							<form>
+								<div class="form-group row">
+								  	<label for="staticEmail" class="col-sm-3 col-form-label">Jenis Data</label>
+							    	<div class="col-sm-9">
+							      		<input type="text" class="form-control" id="staticEmail" value="Jenis Data">
+							    	</div>
+						    	</div>
+								<div class="pt-4 pb-4 text-center">
+									<p class="font-weight-bold">(Pengaduan Online)</p>
+								</div>
+								<div class="form-group row">
+								  	<label for="staticEmail" class="col-sm-3 col-form-label">Jenis</label>
+							    	<div class="col-sm-9">
+							      		<select class="custom-select" id="inputGroupSelect01">
+										    <option selected>Choose...</option>
+										    <option value="1">Home</option>
+										    <option value="2">Pelayanan Publik</option>
+										    <option value="3">Informasi</option>
+										</select>
+							    	</div>
+						    	</div>
+						    	<div class="form-group row">
+							    	<label for="staticEmail" class="col-sm-3 col-form-label">No Handphone</label>
+							    	<div class="col-sm-9">
+							      		<input type="text" class="form-control" id="staticEmail" value="No Handphone">
+							    	</div>
+							    </div>
+							    <div class="form-group row">
+							    	<label for="staticEmail" class="col-sm-3 col-form-label">Tuliskan Pengaduan atau Keperluan Anda</label>
+							    	<div class="col-sm-9">
+							      		<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+							    	</div>
+							    </div>
+							    <div class="pt-4 pb-4 text-center">
+									<p class="font-weight-bold">(Surat Pengantar RT/RW)</p>
+								</div>
+								<div class="form-group row">
+							    	<label for="staticEmail" class="col-sm-3 col-form-label">Wilayah Kadus</label>
+							    	<div class="col-sm-9">
+							      		<input type="text" class="form-control" id="staticEmail" value="Wilayah Kadus">
+							    	</div>
+							    </div>
+							    <div class="form-group row">
+							    	<label for="staticEmail" class="col-sm-3 col-form-label">RT / RW</label>
+							    	<div class="col-sm-9">
+							      		<input type="text" class="form-control" id="staticEmail" value="RT / RW">
+							    	</div>
+							    </div>
+							    <div class="form-group row">
+							    	<label for="staticEmail" class="col-sm-3 col-form-label">Jenis Keperluan</label>
+							    	<div class="col-sm-9">
+							      		<input type="text" class="form-control" id="staticEmail" value="Jenis Keperluan">
+							    	</div>
+							    </div>
+							    <div class="text-center pt-3">
+							    	<button type="button" class="btn btn-primary">Submit</button>
+							    </div>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 	<div class="pt-5 container-fluid pcus">

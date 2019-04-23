@@ -67,7 +67,7 @@ body {
 }
 
 .pcus2 {
-	padding: 40px 85px 40px 85px;
+	padding: 35px 50px 30px 50px;
 }
 
 .bag-frm {
@@ -113,6 +113,16 @@ body {
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
+}
+
+.frm-map {
+	width: 254px;
+	height: 200px;
+}
+
+.img-res {
+	width: 100%;
+	height: 150px;
 }
 
 /*Running Text */
