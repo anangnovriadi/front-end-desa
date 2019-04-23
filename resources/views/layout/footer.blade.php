@@ -6,9 +6,9 @@
 				<div class="form-group mb-2">
 					<select class="custom-select" id="inputGroupSelect01">
 					    <option selected>Choose...</option>
-					    <option value="1">One</option>
-					    <option value="2">Two</option>
-					    <option value="3">Three</option>
+					    <option value="1">Home</option>
+					    <option value="2">Pelayanan Publik</option>
+					    <option value="3">Informasi</option>
 					</select>
 				</div>
 				<div class="gmap_canvas">

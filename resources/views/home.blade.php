@@ -45,7 +45,7 @@
 	</div>
 	<div class="container-fluid pcus d-flex">
 		<div class="col-md-2 runtext-container">
-			<h4 class="mt-1 mb-0 text-center font-weight-bold">Berita Desa : </h4>
+			<p class="mt-1 mb-0 text-center font-weight-bold">Berita Desa : </p>
 		</div>
 		<div class="col-md-10 runtext-container">
 			<div class="main-runtext">
@@ -136,9 +136,9 @@
 							    	<div class="col-sm-9">
 							      		<select class="custom-select" id="inputGroupSelect01">
 										    <option selected>Choose...</option>
-										    <option value="1">Home</option>
-										    <option value="2">Pelayanan Publik</option>
-										    <option value="3">Informasi</option>
+										    <option value="1">One</option>
+										    <option value="2">Two</option>
+										    <option value="3">Three</option>
 										</select>
 							    	</div>
 						    	</div>
