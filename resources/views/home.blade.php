@@ -4,7 +4,7 @@
 
 <section class="mt-4 mb-4">
 	<div class="row container-fluid mx-auto pcus-top">
-		<div class="col-md-10">
+		<div class="col-md-9">
 			<div class="banner-car">
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
@@ -34,7 +34,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-2">
+		<div class="col-md-3">
 			<div class="pb-3">
 				<img src="https://via.placeholder.com/650x250" class="d-block w-100 banner-left" alt="...">
 			</div>
@@ -43,8 +43,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid pcus">
-		<div class="runtext-container">
+	<div class="container-fluid pcus d-flex">
+		<div class="col-md-2 runtext-container">
+			<h4 class="mt-1 mb-0 text-center font-weight-bold">Berita Desa : </h4>
+		</div>
+		<div class="col-md-10 runtext-container">
 			<div class="main-runtext">
 				<marquee direction="" onmouseover="this.stop();" onmouseout="this.start();">
 					<div class="holder">

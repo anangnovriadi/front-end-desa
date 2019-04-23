@@ -122,6 +122,10 @@ marquee {
 	width: 100%;
 }
 
+.run-tx {
+	width: 20%;
+}
+
 .runtext-container {
 	background-color: #ddddff;
 	*background-color: #ccf;
