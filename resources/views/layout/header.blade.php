@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed nav-col bg-light cus-con">
   	<div class="mx-auto text-center">
-  		<p class="m-0 text-white font-weight-bold">Pemeritah Desa Cisaruah</p>
+  		<p class="m-0 text-white font-weight-bold">Website Portal Layanan Publik</p>
+  		<p class="m-0 text-white font-weight-bold">Pemeritah Desa Cisarua</p>
   		<p class="m-0 text-white font-weight-bold">Jln. R.Natapraja No. 01 Cibodas Desa Cisarua Kec. Nagrak, Kabupaten Sukabumi</p>
   	</div>
 </nav>

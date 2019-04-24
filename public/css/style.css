@@ -34,7 +34,7 @@ body {
 
 .nav-col {
 	background-color: #001b48 !important;
-    max-height: 65px;
+    max-height: 90px;
     border-bottom: 1px solid white;
 }
 
@@ -43,7 +43,8 @@ body {
 }
 
 .banner-car {
-	max-height: 200px;
+	max-height: 560px;
+	height: 100%;
 }
 
 .banner {
@@ -51,11 +52,11 @@ body {
 }
 
 .banner-img {
-	height: 320px;
+	height: 560px;
 }
 
 .banner-left {
-	height: 152px;
+	height: 270px;
 }
 
 .pcus-top {
@@ -118,7 +119,7 @@ body {
 }
 
 .frm-map {
-	width: 254px;
+	width: 350px;
 	height: 200px;
 }
 
@@ -186,6 +187,24 @@ marquee {
 	color: #6600ff;
 }
 
+.carousel-indicators li {
+	display: none;
+}
+
+.csr-b {
+	background: black;
+	opacity: 0.8;
+	border-radius: 2px;
+}
+
+.active {
+	background: black !important;
+}
+
+/*#myBarChart{
+  background-color: grey;
+  border-radius: 6px;
+}*/
 
 /*Footer*/
 

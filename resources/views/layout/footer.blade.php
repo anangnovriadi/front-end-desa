@@ -1,14 +1,16 @@
 <footer id="footer" class="bg-dark mt-5">
 	<div class="container">
 		<div class="row text-center text-xs-center text-sm-left text-md-left">
-			<div class="col-xs-12 col-sm-3 col-md-3 text-center">
+			<div class="col-xs-12 col-sm-4 col-md-4 text-center">
 				<h5>Link dan Peta Lokasi</h5>
 				<div class="form-group mb-2">
 					<select class="custom-select" id="inputGroupSelect01">
 					    <option selected>Choose...</option>
 					    <option value="1">Home</option>
-					    <option value="2">Pelayanan Publik</option>
-					    <option value="3">Informasi</option>
+					    <option value="2">Profil Desa</option>
+					    <option value="3">Pelayanan Publik</option>
+					    <option value="3">Portal Berita</option>
+					    <option value="3">Channel Youtube</option>
 					</select>
 				</div>
 				<div class="gmap_canvas">
@@ -16,7 +18,7 @@
 						<a href="https://www.emojilib.com"></a>
 				</div>
 			</div>
-			<div class="offset-md-3 col-sm-6 col-md-6 text-center">
+			<div class="offset-md-2 col-sm-6 col-md-6 text-center">
 				<h5>Link Terkait</h5>
 				<div class="row mt-2">
 					<div class="col-md-4 mb-3">

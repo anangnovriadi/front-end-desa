@@ -19,6 +19,7 @@
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" type="text/javascript"></script>
     @yield('add_js')
 </body>
 </html>

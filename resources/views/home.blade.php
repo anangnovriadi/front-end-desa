@@ -15,12 +15,30 @@
 					<div class="carousel-inner">
 					    <div class="carousel-item active">
 					      <img src="https://via.placeholder.com/650x250" class="d-block w-100 banner-img" alt="...">
+						    <div class="item">
+			                    <div class="carousel-caption csr-b">
+			                        <h3>This is the Third Label</h3>
+			                        <p class="mb-0">The Content of the Third Slide goes in here</p>
+			                    </div> 
+			                </div>
 					    </div>
 					    <div class="carousel-item">
 					      <img src="https://via.placeholder.com/650x250" class="d-block w-100 banner-img" alt="...">
+					      <div class="item">
+			                    <div class="carousel-caption csr-b">
+			                        <h3>This is the Third Label</h3>
+			                        <p class="mb-0">The Content of the Third Slide goes in here</p>
+			                    </div>
+			                </div>
 					    </div>
 					    <div class="carousel-item">
 					      <img src="https://via.placeholder.com/650x250" class="d-block w-100 banner-img" alt="...">
+					      <div class="item">
+			                    <div class="carousel-caption csr-b">
+			                        <h3>This is the Third Label</h3>
+			                        <p class="mb-0">The Content of the Third Slide goes in here</p>
+			                    </div>
+			                </div>
 					    </div>
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -81,25 +99,25 @@
 								<div class="form-group row">
 								  	<label for="staticEmail" class="col-sm-3 col-form-label">NIK / Nama</label>
 							    	<div class="col-sm-9">
-							      		<input type="text" class="form-control" id="staticEmail" value="NIK / Nama">
+							      		<input type="text" class="form-control" id="staticEmail" placeholder="NIK / Nama">
 							    	</div>
 						    	</div>
 						    	<div class="form-group row">
 							    	<label for="staticEmail" class="col-sm-3 col-form-label">Jenis Layanan</label>
 							    	<div class="col-sm-9">
-							      		<input type="text" class="form-control" id="staticEmail" value="Jenis Layanan">
+							      		<input type="text" class="form-control" id="staticEmail" placeholder="Jenis Layanan">
 							    	</div>
 							    </div>
 							    <div class="form-group row">
 							    	<label for="staticEmail" class="col-sm-3 col-form-label">Judul Pengajuan</label>
 							    	<div class="col-sm-9">
-							      		<input type="text" class="form-control" id="staticEmail" value="Judul Pengajuan">
+							      		<input type="text" class="form-control" id="staticEmail" placeholder="Judul Pengajuan">
 							    	</div>
 							    </div>
 							    <div class="form-group row">
 							    	<label for="staticEmail" class="col-sm-3 col-form-label">Captcha</label>
 							    	<div class="col-sm-9">
-							      		<input type="text" class="form-control" id="staticEmail" value="Captcha">
+							      		<input type="text" class="form-control" id="staticEmail" placeholder="Captcha">
 							    	</div>
 							    </div>
 							    <div class="form-group row">
@@ -125,7 +143,7 @@
 								<div class="form-group row">
 								  	<label for="staticEmail" class="col-sm-3 col-form-label">Jenis Data</label>
 							    	<div class="col-sm-9">
-							      		<input type="text" class="form-control" id="staticEmail" value="Jenis Data">
+							      		<input type="text" class="form-control" id="staticEmail" placeholder="Jenis Data">
 							    	</div>
 						    	</div>
 								<div class="pt-4 pb-4 text-center">
@@ -145,7 +163,7 @@
 						    	<div class="form-group row">
 							    	<label for="staticEmail" class="col-sm-3 col-form-label">No Handphone</label>
 							    	<div class="col-sm-9">
-							      		<input type="text" class="form-control" id="staticEmail" value="No Handphone">
+							      		<input type="text" class="form-control" id="staticEmail" placeholder="No Handphone">
 							    	</div>
 							    </div>
 							    <div class="form-group row">
@@ -160,19 +178,19 @@
 								<div class="form-group row">
 							    	<label for="staticEmail" class="col-sm-3 col-form-label">Wilayah Kadus</label>
 							    	<div class="col-sm-9">
-							      		<input type="text" class="form-control" id="staticEmail" value="Wilayah Kadus">
+							      		<input type="text" class="form-control" id="staticEmail" placeholder="Wilayah Kadus">
 							    	</div>
 							    </div>
 							    <div class="form-group row">
 							    	<label for="staticEmail" class="col-sm-3 col-form-label">RT / RW</label>
 							    	<div class="col-sm-9">
-							      		<input type="text" class="form-control" id="staticEmail" value="RT / RW">
+							      		<input type="text" class="form-control" id="staticEmail" placeholder="RT / RW">
 							    	</div>
 							    </div>
 							    <div class="form-group row">
 							    	<label for="staticEmail" class="col-sm-3 col-form-label">Jenis Keperluan</label>
 							    	<div class="col-sm-9">
-							      		<input type="text" class="form-control" id="staticEmail" value="Jenis Keperluan">
+							      		<input type="text" class="form-control" id="staticEmail" placeholder="Jenis Keperluan">
 							    	</div>
 							    </div>
 							    <div class="text-center pt-3">
@@ -183,7 +201,6 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
 	</div>
 	<div class="pt-5 container-fluid pcus">
@@ -223,8 +240,11 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<div class="module2 mage2" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/desa.jpg') }});">
+				<!-- <div class="module2 mage2" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/desa.jpg') }});">
 				  	<p>Data Desa Cisarua</p>
+				</div> -->
+				<div class="pt-3 pb-4 bag-frm">
+					<canvas id="myBarChart"></canvas>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -236,4 +256,44 @@
 	</div>
 </section>
 
+@section('add_js')
+<script type="text/javascript">
+	var canvas = document.getElementById("myBarChart");
+	var ctx = canvas.getContext('2d');
+
+	Chart.defaults.global.defaultFontColor = 'black';
+	Chart.defaults.global.defaultFontSize = 16;
+
+	var data = {
+	    labels: ["Lansia", "Remaja", "Anak - Anak"],
+	      	datasets: [
+	        {
+	            fill: true,
+	            backgroundColor: [
+	                'red',
+	                'blue',
+	                'yellow'
+	            ],
+	            data: [40, 30, 20],
+	            borderWidth: [2, 2, 2]
+	        }
+	    ]
+	};
+
+	var options = {
+        title: {
+            display: true,
+            text: 'Data Penduduk Cisarua',
+            position: 'top'
+        },
+	    rotation: -0.7 * Math.PI
+	};
+
+	var myBarChart = new Chart(ctx, {
+	    type: 'pie',
+	    data: data,
+	    options: options
+	});
+</script>
+@endsection
 @endsection
