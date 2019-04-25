@@ -34,7 +34,6 @@ body {
 
 .nav-col {
 	background-color: #001b48 !important;
-    max-height: 90px;
     border-bottom: 1px solid white;
 }
 
@@ -56,7 +55,7 @@ body {
 }
 
 .banner-left {
-	height: 270px;
+	height: 272px;
 }
 
 .pcus-top {
@@ -76,6 +75,10 @@ body {
 .bag-frm {
 	border-radius: 2px;
 	background-color: #f8f9fa;
+}
+
+.c-frm {
+	height: 91.6%;
 }
 
 .module {
@@ -119,13 +122,13 @@ body {
 }
 
 .frm-map {
-	width: 350px;
+	width: 100%;
 	height: 200px;
 }
 
 .img-res {
-	width: 100%;
-	height: 150px;
+	width: 95px;
+    height: 110px;
 }
 
 /*Running Text */
@@ -199,6 +202,10 @@ marquee {
 
 .active {
 	background: black !important;
+}
+
+#pengaduan, #surat {
+	display: none;
 }
 
 /*#myBarChart{
@@ -279,4 +286,20 @@ footer .section-title {
     border-left: transparent;
     padding-bottom: 0px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 780px) {
+	.pcus-top {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.pcus {
+		padding-right: 15px;
+    	padding-left: 15px;
+	}
+
+	.logo-2 {
+		margin-bottom: 12px;
+	}
 }

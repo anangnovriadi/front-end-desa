@@ -14,21 +14,36 @@
 					</select>
 				</div>
 				<div class="gmap_canvas">
-					<iframe class="frm-map" width="auto" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=cianjur&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+					<iframe class="frm-map" width="auto" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Cisarua%20Nagrek&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 						<a href="https://www.emojilib.com"></a>
 				</div>
 			</div>
-			<div class="offset-md-2 col-sm-6 col-md-6 text-center">
+			<div class="offset-md-4 col-sm-4 col-md-4 text-center">
 				<h5>Link Terkait</h5>
 				<div class="row mt-2">
-					<div class="col-md-4 mb-3">
-						<img class="img-res" src="{{ asset('img/logo-sukabumi.png') }}" />
+					<div class="col-md-6 mb-3">
+						<a href="https://sukabumikab.go.id/portal/">
+						<img class="img-res" src="{{ asset('img/pemkab_sukabumi.png') }}" />
+						<p class="font-weight-bold text-white">Pemda Kabupaten Sukabumi</p>
+						</a>
 					</div>
-					<div class="col-md-4 mb-3">
-						<img class="img-res" src="{{ asset('img/logo-jakarta.png') }}" />
+					<div class="col-md-6 mb-3">
+						<a href="https://sukabumikab.go.id/portal/opd/dinas-komunikasi-informatika-dan-persandian.html">
+						<img class="img-res" src="{{ asset('img/pemkab_sukabumi.png') }}" />
+						<p class="font-weight-bold text-white">Dinas Komunikasi, Informatika dan Persadian Sukabumi</p>
+						</a>
 					</div>
-					<div class="col-md-4 mb-3">
-						<img class="img-res" src="{{ asset('img/logo-bogor.png') }}" />
+					<div class="col-md-6 mb-3">
+						<a href="https://sukabumikab.go.id/portal/opd/dinas-pemberdayaan-masyarakat-dan-desa.html">
+						<img class="img-res" src="{{ asset('img/pemkab_sukabumi.png') }}" />
+						<p class="font-weight-bold text-white">DPMD Kabupaten Sukabumi</p>
+						</a>
+					</div>
+					<div class="col-md-6 mb-3">
+						<a href="https://www.dukcapilkabsukabumi.org/">
+						<img class="img-res" src="{{ asset('img/pemkab_sukabumi.png') }}" />
+						<p class="font-weight-bold text-white">Dukcapil Kabupaten Sukabumi</p>
+						</a>
 					</div>
 				</div>
 			</div>
