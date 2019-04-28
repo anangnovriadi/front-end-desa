@@ -159,7 +159,7 @@
 									</div>
 									<div class="pl-2">
 										<div class="text-center">
-											<button class="btn btn-secondary" type="button" onclick="showSurat()">Surat Pengantar</button>
+											<button class="btn btn-success" type="button" onclick="showSurat()">Surat Pengantar</button>
 										</div>
 									</div>
 								</div>
@@ -280,6 +280,8 @@
 </section>
 
 @section('add_js')
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.5.0"></script>
 <script type="text/javascript">
 	var canvas = document.getElementById("myBarChart");
 	var ctx = canvas.getContext('2d');
@@ -288,15 +290,16 @@
 	Chart.defaults.global.defaultFontSize = 16;
 
 	var data = {
-	    labels: ["Berdasarkan Umur", "Berdasarkan Jenis Kelamin"],
+	    labels: ["PNS", "Wiraswasta", "Petani"],
 	      	datasets: [
 	        {
 	            fill: true,
 	            backgroundColor: [
 	                '#A52A2A',
-	                '#ADD8E6'
+	                '#ADD8E6',
+	                '#ECFF33'
 	            ],
-	            data: [40, 60],
+	            data: [40, 30, 30],
 	            borderWidth: [2, 2]
 	        }
 	    ]
@@ -308,7 +311,21 @@
             text: 'Data Penduduk Cisarua',
             position: 'top'
         },
-	    rotation: -0.7 * Math.PI
+	    cutoutPercentage: 40,
+	    plugins: {
+            datalabels: {
+                formatter: (value, ctx) => {
+	                let sum = 0;
+	                let dataArr = ctx.chart.data.datasets[0].data;
+	                dataArr.map(data => {
+	                    sum += data;
+	                });
+	                let percentage = (value*100 / sum).toFixed()+"%";
+	                return percentage;
+	            },
+            	color: '#fff',
+            }
+        }
 	};
 
 	var myBarChart = new Chart(ctx, {
@@ -319,21 +336,27 @@
 
 	function showPengaduan() {
 		var x = document.getElementById("pengaduan");
+		var y = document.getElementById("surat");
 
 	  	if (x.style.display === "block") {
 	    	x.style.display = "none";
+	    	y.style.display = "block";
 	  	} else {
 	    	x.style.display = "block";
+	    	y.style.display = "none";
 	  	}
 	}
 
 	function showSurat() {
-		var x = document.getElementById("surat");
+		var x = document.getElementById("pengaduan");
+		var y = document.getElementById("surat");
 
-	  	if (x.style.display === "block") {
-	    	x.style.display = "none";
-	  	} else {
+	  	if (y.style.display === "block") {
 	    	x.style.display = "block";
+	    	y.style.display = "none";
+	  	} else {
+	    	y.style.display = "block";
+	    	x.style.display = "none";
 	  	}
 	}
 </script>
