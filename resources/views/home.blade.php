@@ -135,57 +135,67 @@
 				</div>
 				<div class="col-md-6 mb-4">
 					<div class="text-center pb-3">
-						<h3>Cek Data</h3>
+						<h3>Cek Data dan Pengaduan</h3>
 					</div>
 					<div class="bag-frm">
 						<div class="pcus2">
 							<form>
+								<div class="pt-2 pb-3 text-center">
+									<p class="font-weight-bold">(Cek Data)</p>
+								</div>
 								<div class="form-group row">
-								  	<label for="staticEmail" class="col-sm-3 col-form-label">Jenis Data</label>
-							    	<div class="col-sm-9">
+							    	<div class="col-sm-12">
 							      		<input type="text" class="form-control" id="staticEmail" placeholder="Jenis Data">
 							    	</div>
 						    	</div>
-						    	
-								<div class="pt-2 pb-2 text-center">
-									<p class="font-weight-bold">(Pengaduan Online)</p>
+						    	<div class="pt-2 pb-2 text-center">
+									<p class="font-weight-bold">Pilih Jenis Data</p>
 								</div>
-								<!-- <div class="text-center" id="btni">
-									<button class="btn btn-secondary" type="button" onclick="showPengaduan()">Show</button>
-								</div> -->
-								<div id="" class="pt-4">
+						    	<div class="d-flex justify-content-center">
+									<div class="pr-2">
+										<div class="text-center">
+											<button class="btn btn-secondary" type="button" onclick="showPengaduan()">Pengaduan</button>
+										</div>
+									</div>
+									<div class="pl-2">
+										<div class="text-center">
+											<button class="btn btn-secondary" type="button" onclick="showSurat()">Surat Pengantar</button>
+										</div>
+									</div>
+								</div>
+								<div id="pengaduan" class="pt-4">
+									<div class="pt-2 pb-2 text-center">
+										<p class="font-weight-bold">(Pengaduan Online)</p>
+									</div>
 									<div class="form-group row">
-									  	<label for="staticEmail" class="col-sm-3 col-form-label">Jenis</label>
-								    	<div class="col-sm-9">
+								    	<div class="col-sm-12">
 								      		<select class="custom-select" id="inputGroupSelect01">
-											    <option selected>Choose...</option>
-											    <option value="1">One</option>
-											    <option value="2">Two</option>
-											    <option value="3">Three</option>
+											    <option selected>Pilih Kategori</option>
+											    <option value="1">Administrasi</option>
+											    <option value="2">Harga</option>
+											    <option value="3">Jumlah</option>
+											    <option value="3">Kualitas</option>
+											    <option value="3">Waktu</option>
 											</select>
 								    	</div>
 							    	</div>
 							    	<div class="form-group row">
-								    	<label for="staticEmail" class="col-sm-3 col-form-label">No Handphone</label>
-								    	<div class="col-sm-9">
+								    	<div class="col-sm-12">
 								      		<input type="text" class="form-control" id="staticEmail" placeholder="No Handphone">
 								    	</div>
 								    </div>
 								    <div class="form-group row">
-								    	<label for="staticEmail" class="col-sm-3 col-form-label">Tuliskan Pengaduan atau Keperluan Anda</label>
-								    	<div class="col-sm-9">
-								      		<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+								    	<div class="col-sm-12">
+								      		<textarea placeholder="Tuliskan Pengaduan atau Keperluan Anda" class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
 								    	</div>
 								    </div>
 						    	</div>
 								
-							    <div class="pt-2 pb-2 text-center">
-									<p class="font-weight-bold">(Surat Pengantar RT/RW)</p>
-								</div>
-								<div class="text-center" id="btni">
-									<button class="btn btn-secondary" type="button" onclick="showSurat()">Show</button>
-								</div>
 								<div id="surat" class="pt-4">
+								    <div class="pt-2 pb-2 text-center">
+										<p class="font-weight-bold">(Surat Pengantar RT/RW)</p>
+									</div>
+								
 									<div class="form-group row">
 								    	<label for="staticEmail" class="col-sm-3 col-form-label">Wilayah Kadus</label>
 								    	<div class="col-sm-9">
@@ -205,7 +215,8 @@
 								    	</div>
 								    </div>
 						    	</div>
-							    <div class="text-center pt-5">
+
+							    <div class="text-center pt-4">
 							    	<button type="button" class="btn btn-primary">Submit</button>
 							    </div>
 							</form>
