@@ -6,11 +6,11 @@
 				<div class="form-group mb-2">
 					<select class="custom-select" id="inputGroupSelect01">
 					    <option selected>Choose...</option>
-					    <option value="1">Home</option>
-					    <option value="2">Profil Desa</option>
-					    <option value="3">Pelayanan Publik</option>
-					    <option value="3">Portal Berita</option>
-					    <option value="3">Channel Youtube</option>
+					    <option value="1">Peta Dasar</option>
+					    <option value="2">Sarana Prasarana</option>
+					    <option value="3">Data Sosial</option>
+					    <option value="3">Data Ekonomi</option>
+					    <option value="3">Infrastruktur</option>
 					</select>
 				</div>
 				<div class="gmap_canvas">

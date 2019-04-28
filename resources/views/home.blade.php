@@ -54,10 +54,10 @@
 		</div>
 		<div class="col-md-3">
 			<div class="pb-3">
-				<img src="{{ asset('img/ri.jpg') }}" class="d-block w-100 banner-left" alt="...">
+				<img src="{{ asset('img/kadis.jpg') }}" class="d-block w-100 banner-left" alt="...">
 			</div>
 			<div class="pb-3">
-				<img src="{{ asset('img/ri2.jpg') }}" class="d-block w-100 banner-left" alt="...">
+				<img src="{{ asset('img/kadis2.jpg') }}" class="d-block w-100 banner-left" alt="...">
 			</div>
 		</div>
 	</div>
