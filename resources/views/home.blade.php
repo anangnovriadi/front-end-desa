@@ -277,17 +277,16 @@
 	Chart.defaults.global.defaultFontSize = 16;
 
 	var data = {
-	    labels: ["Lansia", "Remaja", "Anak - Anak"],
+	    labels: ["Berdasarkan Umur", "Berdasarkan Jenis Kelamin"],
 	      	datasets: [
 	        {
 	            fill: true,
 	            backgroundColor: [
 	                'red',
-	                'blue',
-	                'yellow'
+	                '#ADD8E6'
 	            ],
-	            data: [40, 30, 20],
-	            borderWidth: [2, 2, 2]
+	            data: [40, 60],
+	            borderWidth: [2, 2]
 	        }
 	    ]
 	};
