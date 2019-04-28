@@ -14,7 +14,7 @@
 					</ol>
 					<div class="carousel-inner">
 					    <div class="carousel-item active">
-					      <img src="https://via.placeholder.com/650x250" class="d-block w-100 banner-img" alt="...">
+					      <img src="{{ asset('img/pa.jpg') }}" class="d-block w-100 banner-img" alt="...">
 						    <div class="item">
 			                    <div class="carousel-caption csr-b">
 			                        <h3>This is the Third Label</h3>
@@ -23,7 +23,7 @@
 			                </div>
 					    </div>
 					    <div class="carousel-item">
-					      <img src="https://via.placeholder.com/650x250" class="d-block w-100 banner-img" alt="...">
+					      <img src="{{ asset('img/pr.jpg') }}" class="d-block w-100 banner-img" alt="...">
 					      <div class="item">
 			                    <div class="carousel-caption csr-b">
 			                        <h3>This is the Third Label</h3>
@@ -32,7 +32,7 @@
 			                </div>
 					    </div>
 					    <div class="carousel-item">
-					      <img src="https://via.placeholder.com/650x250" class="d-block w-100 banner-img" alt="...">
+					      <img src="{{ asset('img/pl.jpg') }}" class="d-block w-100 banner-img" alt="...">
 					      <div class="item">
 			                    <div class="carousel-caption csr-b">
 			                        <h3>This is the Third Label</h3>
@@ -54,10 +54,10 @@
 		</div>
 		<div class="col-md-3">
 			<div class="pb-3">
-				<img src="https://via.placeholder.com/650x250" class="d-block w-100 banner-left" alt="...">
+				<img src="{{ asset('img/ri.jpg') }}" class="d-block w-100 banner-left" alt="...">
 			</div>
 			<div class="pb-3">
-				<img src="https://via.placeholder.com/650x250" class="d-block w-100 banner-left" alt="...">
+				<img src="{{ asset('img/ri2.jpg') }}" class="d-block w-100 banner-left" alt="...">
 			</div>
 		</div>
 	</div>

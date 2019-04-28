@@ -1,7 +1,7 @@
 <footer id="footer" class="bg-dark mt-5">
 	<div class="container">
 		<div class="row text-center text-xs-center text-sm-left text-md-left">
-			<div class="col-xs-12 col-sm-4 col-md-4 text-center">
+			<div class="col-xs-12 col-sm-8 col-md-8 text-center">
 				<h5>Link dan Peta Lokasi</h5>
 				<div class="form-group mb-2">
 					<select class="custom-select" id="inputGroupSelect01">
@@ -18,7 +18,7 @@
 						<a href="https://www.emojilib.com"></a>
 				</div>
 			</div>
-			<div class="offset-md-4 col-sm-4 col-md-4 text-center">
+			<div class="col-sm-4 col-md-4 text-center">
 				<h5>Link Terkait</h5>
 				<div class="row mt-2">
 					<div class="col-md-6 mb-3">
@@ -30,7 +30,7 @@
 					<div class="col-md-6 mb-3">
 						<a href="https://sukabumikab.go.id/portal/opd/dinas-komunikasi-informatika-dan-persandian.html">
 						<img class="img-res" src="{{ asset('img/pemkab_sukabumi.png') }}" />
-						<p class="font-weight-bold text-white">Dinas Komunikasi, Informatika dan Persadian Sukabumi</p>
+						<p class="font-weight-bold text-white" style="font-size: 12px;">Dinas Komunikasi, Informatika dan Persadian Sukabumi</p>
 						</a>
 					</div>
 					<div class="col-md-6 mb-3">
@@ -48,7 +48,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
 				<ul class="list-unstyled list-inline social text-center">
 					<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
@@ -57,10 +57,10 @@
 				</ul>
 			</div>
 			</hr>
-		</div>	
+		</div>	 -->
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-				<p class="h6">&copy Pemeritah Desa Cisaruah</p>
+				<p class="h6">&copy Pemeritah Cisaruah</p>
 			</div>
 			</hr>
 		</div>	
