@@ -282,7 +282,7 @@
 	        {
 	            fill: true,
 	            backgroundColor: [
-	                'red',
+	                '#A52A2A',
 	                '#ADD8E6'
 	            ],
 	            data: [40, 60],
