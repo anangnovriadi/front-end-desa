@@ -8,6 +8,7 @@
     <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="{{ asset('css/main.css') }}" /> -->
     @yield('add_css')
 </head>
 <body>
@@ -19,8 +20,34 @@
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.1.0.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://rawgithub.com/WickyNilliams/headroom.js/gh-pages/assets/scripts/main.js"></script>
+    <script type="text/javascript">
+        (function() {
+        var header = new Headroom(document.querySelector("#header"), {
+            tolerance: 5,
+            offset : 205,
+            classes: {
+              initial: "animated",
+              pinned: "slideDown",
+              unpinned: "slideUp"
+            }
+        });
+        header.init();
+
+        var bttHeadroom = new Headroom(document.getElementById("btt"), {
+            tolerance : 0,
+            offset : 500,
+            classes : {
+                initial : "slide",
+                pinned : "slide--reset",
+                unpinned : "slide--down"
+            }
+        });
+        bttHeadroom.init();
+    }());
+    </script>
     @yield('add_js')
 </body>
 </html>

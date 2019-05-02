@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="mt-4 mb-4">
+<section class="mb-4 mt-top-i">
 	<div class="row container-fluid mx-auto pcus-top">
 		<div class="col-md-9 mb-4">
 			<div class="banner-car">
@@ -57,7 +57,7 @@
 				<img src="{{ asset('img/kadis.jpg') }}" class="d-block w-100 banner-left" alt="...">
 			</div>
 			<div class="pb-3">
-				<img src="{{ asset('img/kadis2.jpg') }}" class="d-block w-100 banner-left" alt="...">
+				<img src="{{ asset('img/kadis3.jpg') }}" class="d-block w-100 banner-left" alt="...">
 			</div>
 		</div>
 	</div>
@@ -195,7 +195,13 @@
 								    <div class="pt-2 pb-2 text-center">
 										<p class="font-weight-bold">(Surat Pengantar RT/RW)</p>
 									</div>
-								
+									
+									<div class="form-group row">
+								    	<label for="staticEmail" class="col-sm-3 col-form-label">Nama</label>
+								    	<div class="col-sm-9">
+								      		<input type="text" class="form-control" id="staticEmail" placeholder="Nama Anda">
+								    	</div>
+								    </div>
 									<div class="form-group row">
 								    	<label for="staticEmail" class="col-sm-3 col-form-label">Wilayah Kadus</label>
 								    	<div class="col-sm-9">
@@ -272,7 +278,7 @@
 			</div>
 			<div class="col-md-6 mb-4">
 				<div class="embed-responsive embed-responsive-16by9">
-				  	<iframe width="auto" height="300" src="https://www.youtube.com/embed/ECPeWx1O08c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  	<iframe width="auto" height="300" src="https://www.youtube.com/embed/DHQR5N8v_o8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -282,6 +288,27 @@
 @section('add_js')
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.5.0"></script>
+<script src="https://npmcdn.com/headroom.js@0.9.4/dist/headroom.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var myElement = document.querySelector("header");
+
+var headroom  = new Headroom(myElement, {
+  "offset": 220,
+  "tolerance": {
+    up: 0,
+    down: 0
+  },
+  "classes": {
+    "initial": "header--fixed",
+    "pinned": "slideDown",
+    "unpinned": "slideUp",
+    "top": "top",
+    "notTop" : "not-top",
+  }
+});
+
+headroom.init();
+</script>
 <script type="text/javascript">
 	var canvas = document.getElementById("myBarChart");
 	var ctx = canvas.getContext('2d');
@@ -311,7 +338,7 @@
             text: 'Data Penduduk Cisarua',
             position: 'top'
         },
-	    cutoutPercentage: 40,
+	    // cutoutPercentage: 40,
 	    plugins: {
             datalabels: {
                 formatter: (value, ctx) => {
@@ -331,7 +358,8 @@
 	var myBarChart = new Chart(ctx, {
 	    type: 'pie',
 	    data: data,
-	    options: options
+	    options: options,
+	    responsive: true
 	});
 
 	function showPengaduan() {

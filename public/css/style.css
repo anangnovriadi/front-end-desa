@@ -11,13 +11,13 @@ body {
 }
 
 .logo {
-	width: 200px;
+	width: 150px;
 	height: auto;
 	background-size: cover;
 }
 
 .logo-2 {
-	width: 52px;
+	width: 150px;
 	height: auto;
 }
 
@@ -90,6 +90,10 @@ body {
   	float: left;
 }
 
+.mt-top-i {
+	margin-top: 150px;
+}
+
 .mage p {
 	text-align: center;
  	font-weight: 600;
@@ -129,6 +133,11 @@ body {
 .img-res {
 	width: 70px;
     height: 94px;
+}
+
+#myBarChart {
+	width: 100%;
+	height: auto;
 }
 
 /*Running Text */
@@ -208,10 +217,105 @@ marquee {
 	display: none;
 }
 
-/*#myBarChart{
-  background-color: grey;
-  border-radius: 6px;
-}*/
+/*Sticky*/
+
+.header {
+    background-color: #292f36;
+}
+
+.hide-from-print {
+    display: block;
+}
+
+.header--fixed {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.animated {
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    -o-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    will-change: transform, opacity;
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+    -webkit-transform: translateY(0);
+}
+100% {
+    -webkit-transform: translateY(-100%);
+}
+}@-moz-keyframes slideUp {
+    0% {
+    -moz-transform: translateY(0);
+}
+100% {
+    -moz-transform: translateY(-100%);
+}
+}@-o-keyframes slideUp {
+    0% {
+    -o-transform: translateY(0);
+}
+100% {
+    -o-transform: translateY(-100%);
+}
+}@keyframes slideUp {
+    0% {
+    transform: translateY(0);
+}
+100% {
+    transform: translateY(-100%);
+}
+}.animated.slideUp {
+    -webkit-animation-name: slideUp;
+    -moz-animation-name: slideUp;
+    -o-animation-name: slideUp;
+    animation-name: slideUp;
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+    -webkit-transform: translateY(-100%);
+}
+100% {
+    -webkit-transform: translateY(0);
+}
+}@-moz-keyframes slideDown {
+    0% {
+    -moz-transform: translateY(-100%);
+}
+100% {
+    -moz-transform: translateY(0);
+}
+}@-o-keyframes slideDown {
+    0% {
+    -o-transform: translateY(-100%);
+}
+100% {
+    -o-transform: translateY(0);
+}
+}@keyframes slideDown {
+    0% {
+    transform: translateY(-100%);
+}
+100% {
+    transform: translateY(0);
+}
+}.animated.slideDown {
+    -webkit-animation-name: slideDown;
+    -moz-animation-name: slideDown;
+    -o-animation-name: slideDown;
+    animation-name: slideDown;
+}
 
 /*Footer*/
 
