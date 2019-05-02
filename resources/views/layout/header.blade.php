@@ -4,7 +4,7 @@
   	</button>
   	<div class="nav-col bg-light cus-con pt-2 pb-2">
 	  	<div class="mx-auto text-center">
-	  		<p class="m-0 text-white font-weight-bold">Portal Layanan Publik</p>
+	  		<p class="m-0 text-white font-weight-bold">Portal Layanan Publik Desa Cisarua</p>
 	  		<!-- <p class="m-0 text-white font-weight-bold">Pemeritah Desa Cimerang</p> -->
 	  		<!-- <p class="m-0 text-white font-weight-bold">Desa Cimerang, Purabaya, Sukabumi, Jawa Barat</p> -->
 	  	</div>
