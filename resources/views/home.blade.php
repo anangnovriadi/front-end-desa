@@ -4,7 +4,7 @@
 
 <section class="mb-4 mt-top-i">
 	<div class="row container-fluid mx-auto pcus-top">
-		<div class="col-md-9 mb-4">
+		<div class="col-md-10 mb-4">
 			<div class="banner-car">
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
@@ -17,8 +17,8 @@
 					      <img src="{{ asset('img/pa.jpg') }}" class="d-block w-100 banner-img" alt="...">
 						    <div class="item">
 			                    <div class="carousel-caption csr-b">
-			                        <h3>This is the Third Label</h3>
-			                        <p class="mb-0">The Content of the Third Slide goes in here</p>
+			                        <h3>Teh Panas Temani Pertemuan 4 Mata Jokowi dan AHY di Istana</h3>
+			                        <!-- <p class="mb-0">The Content of the Third Slide goes in here</p> -->
 			                    </div> 
 			                </div>
 					    </div>
@@ -26,8 +26,8 @@
 					      <img src="{{ asset('img/pr.jpg') }}" class="d-block w-100 banner-img" alt="...">
 					      <div class="item">
 			                    <div class="carousel-caption csr-b">
-			                        <h3>This is the Third Label</h3>
-			                        <p class="mb-0">The Content of the Third Slide goes in here</p>
+			                        <h3>LSI Denny JA: Jokowi Unggul 21 Provinsi dari Prabowo</h3>
+			                        <!-- <p class="mb-0">The Content of the Third Slide goes in here</p> -->
 			                    </div>
 			                </div>
 					    </div>
@@ -35,8 +35,8 @@
 					      <img src="{{ asset('img/pl.jpg') }}" class="d-block w-100 banner-img" alt="...">
 					      <div class="item">
 			                    <div class="carousel-caption csr-b">
-			                        <h3>This is the Third Label</h3>
-			                        <p class="mb-0">The Content of the Third Slide goes in here</p>
+			                        <h3>Deretan Caleg Artis dari PKB yang Lolos ke Senayan</h3>
+			                        <!-- <p class="mb-0">The Content of the Third Slide goes in here</p> -->
 			                    </div>
 			                </div>
 					    </div>
@@ -52,13 +52,36 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-2">
 			<div class="pb-3">
+				<div class="p-2 text-center" style="background: rgba(0,0,0,.05); border-radius: 2px;">
+					<p class="mb-0 font-weight-bold">Kepala Desa</p>
+				</div>
 				<img src="{{ asset('img/kadis.jpg') }}" class="d-block w-100 banner-left" alt="...">
 			</div>
 			<div class="pb-3">
-				<img src="{{ asset('img/kadis3.jpg') }}" class="d-block w-100 banner-left" alt="...">
-			</div>
+				<div class="p-2 text-center" style="background: rgba(0,0,0,.05); border-radius: 2px;">
+					<p class="mb-0 font-weight-bold">Staff Desa</p>
+				</div>
+				<div id="carouselExampleIndicatorss" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+					    <li data-target="#carouselExampleIndicatorss" data-slide-to="0" class="active"></li>
+					    <li data-target="#carouselExampleIndicatorss" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicatorss" data-slide-to="2"></li>
+					</ol>
+				  	<div class="carousel-inner">
+				    	<div class="carousel-item active">
+				      		<img src="{{ asset('img/kadis3.jpg') }}" class="d-block w-100 banner-left" alt="...">
+				    	</div>
+				    	<div class="carousel-item">
+				      		<img src="{{ asset('img/staff1.jpg') }}" class="d-block w-100 banner-left" alt="...">
+				    	</div>
+				    	<div class="carousel-item">
+				      		<img src="{{ asset('img/staff2.jpg') }}" class="d-block w-100 banner-left" alt="...">
+				    	</div>
+				  	</div>
+				</div>
+			</div>			
 		</div>
 	</div>
 	<div class="container-fluid pcus d-flex">
@@ -240,22 +263,22 @@
 		</div>
 		<div class="row">
 			<div class="col-md-3 mb-4">
-				<div class="module mage" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/pertanian.jpg') }});">
+				<div class="module mage shadow p-3 bg-white rounded" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/pertanian.jpg') }});">
 				  	<p>Potensi Pertanian</p>
 				</div>
 			</div>
 			<div class="col-md-3 mb-4">
-				<div class="module mage" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/perikanan.jpg') }});">
+				<div class="module mage shadow p-3 bg-white rounded" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/perikanan.jpg') }});">
 				  	<p>Potensi Perikanan</p>
 				</div>
 			</div>
 			<div class="col-md-3 mb-4">
-				<div class="module mage" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/peternakan.jpg') }});">
+				<div class="module mage shadow p-3 bg-white rounded" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/peternakan.jpg') }});">
 				  	<p>Potensi Peternakan</p>
 				</div>
 			</div>
 			<div class="col-md-3 mb-4">
-				<div class="module mage" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/jalan.jpg') }});">
+				<div class="module mage shadow p-3 bg-white rounded" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/jalan.jpg') }});">
 				  	<p>Potensi Bumdes</p>
 				</div>
 			</div>

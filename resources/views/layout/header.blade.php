@@ -1,7 +1,6 @@
 <header id="header" class="navbar navbar-expand-lg bg-light shadow header header--fixed hide-from-print p-0">
   	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  		<i class="fa fa-bars"></i>
-    	<span class="navbar-toggler-icon"></span>
+    	<span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
   	</button>
   	<div class="nav-col bg-light cus-con pt-2 pb-2">
 	  	<div class="mx-auto text-center">
@@ -14,7 +13,7 @@
   		<img src="{{ asset('img/Pemda_Kabupaten_Sukabumi.png') }}" class="logo-2" alt="">
     	<ul class="navbar-nav mx-auto">
 	      	<li class="nav-item mr-2 ml-2">
-	        	<a class="nav-link gray-cus hov" href="#">Beranda</a>
+	        	<a class="nav-link gray-cus hov" href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
 	      	</li>
 	      	<li class="nav-item mr-2 ml-2">
 	        	<a class="nav-link gray-cus hov" href="#">Profil Desa</a>

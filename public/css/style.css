@@ -33,8 +33,9 @@ body {
 }
 
 .nav-col {
-	background-color: #001b48 !important;
-    border-bottom: 1px solid white;
+	/*background-color: #001b48 !important;*/
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  border-bottom: 1px solid white;
 }
 
 .gray-cus {
@@ -42,7 +43,7 @@ body {
 }
 
 .banner-car {
-	max-height: 580px;
+	max-height: 500px;
 	height: 100%;
 }
 
@@ -51,11 +52,11 @@ body {
 }
 
 .banner-img {
-	height: 560px;
+	height: 500px;
 }
 
 .banner-left {
-	height: 272px;
+	height: 202px;
 }
 
 .pcus-top {
@@ -140,6 +141,15 @@ body {
 	height: auto;
 }
 
+.navbar-toggler-icon {
+  padding-top: 4px;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+  width: 100%;
+  margin: auto;
+}
+
 /*Running Text */
 
 marquee {
@@ -154,13 +164,14 @@ marquee {
 .runtext-container {
 	background-color: #ddddff;
 	*background-color: #ccf;
-	background-image:-moz-linear-gradient(top,#ccf,#fff);
-	background-image:-webkit-gradient(linear,0 0,0 100%,from(#ccf),to(#fff));
-	background-image:-webkit-linear-gradient(top,#ccf,#fff);
-	background-image:-o-linear-gradient(top,#ccf,#fff);
-	background-image:linear-gradient(to bottom,#ccf,#fff);
-	background-repeat:repeat-x;
-	border: 2px solid rgba(0,0,0,.05);
+	background-image:-moz-linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+	background-image:-webkit-gradient(to top, #accbee 0%, #e7f0fd 100%);
+	background-image:-webkit-linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+	background-image:-o-linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+	background-image:linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  background-repeat: repeat-x;
+  border: 1px solid #accbee;
 	border-radius: 4px;
 	width: 100%;
 	overflow-x: hidden;
@@ -199,11 +210,16 @@ marquee {
 	color: #6600ff;
 }
 
+.fancybox {
+  color: #444 !important;
+}
+
 .carousel-indicators li {
 	display: none;
 }
 
 .csr-b {
+	padding: 15px;
 	background: black;
 	opacity: 0.8;
 	border-radius: 2px;
@@ -406,4 +422,8 @@ footer .section-title {
 	.logo-2 {
 		margin-bottom: 12px;
 	}
+
+  .mt-top-i {
+    margin-top: 100px;
+  }
 }
