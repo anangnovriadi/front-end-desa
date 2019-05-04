@@ -292,9 +292,6 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 mb-4">
-				<!-- <div class="module2 mage2" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/desa.jpg') }});">
-				  	<p>Data Desa Cisarua</p>
-				</div> -->
 				<div class="pt-3 pb-4 bag-frm">
 					<canvas id="myBarChart"></canvas>
 				</div>
@@ -302,6 +299,18 @@
 			<div class="col-md-6 mb-4">
 				<div class="embed-responsive embed-responsive-16by9">
 				  	<iframe width="auto" height="300" src="https://www.youtube.com/embed/ECPeWx1O08c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 mb-4">
+				<div class="pt-3 pb-4 bag-frm">
+					<canvas id="barChart"></canvas>
+				</div>
+			</div>
+			<div class="col-md-6 mb-4">
+				<div class="pt-3 pb-4 bag-frm">
+					<canvas id="lineChart"></canvas>
 				</div>
 			</div>
 		</div>
@@ -333,6 +342,74 @@ var headroom  = new Headroom(myElement, {
 headroom.init();
 </script>
 <script type="text/javascript">
+	// Line
+	var ctx = document.getElementById('lineChart').getContext('2d');
+	var myChart = new Chart(ctx, {
+	    type: 'line',
+	    data: {
+	        labels: ["PNS", "Wiraswasta", "Petani"],
+	        datasets: [{
+	            label: 'Data Penduduk Cisarua',
+	            data: [12, 19, 4],
+	            backgroundColor: [
+	                'rgba(255, 99, 132, 0.2)',
+	                'rgba(54, 162, 235, 0.2)',
+	                'rgba(255, 206, 86, 0.2)'
+	            ],
+	            borderColor: [
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(54, 162, 235, 1)',
+	                'rgba(255, 206, 86, 1)'
+	            ],
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                    beginAtZero: true
+	                }
+	            }]
+	        }
+	    }
+	});
+
+	// Bar
+	var ctx = document.getElementById('barChart').getContext('2d');
+	var myChart = new Chart(ctx, {
+	    type: 'bar',
+	    data: {
+	        labels: ["PNS", "Wiraswasta", "Petani"],
+	        datasets: [{
+	            label: 'Data Penduduk Cisarua',
+	            data: [12, 19, 14],
+	            backgroundColor: [
+	                'rgba(255, 99, 132, 0.2)',
+	                'rgba(54, 162, 235, 0.2)',
+	                'rgba(255, 206, 86, 0.2)'
+	            ],
+	            borderColor: [
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(54, 162, 235, 1)',
+	                'rgba(255, 206, 86, 1)'
+	            ],
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                    beginAtZero: true
+	                }
+	            }]
+	        }
+	    }
+	});
+
+
+	// Pie
 	var canvas = document.getElementById("myBarChart");
 	var ctx = canvas.getContext('2d');
 
@@ -361,7 +438,6 @@ headroom.init();
             text: 'Data Penduduk Cisarua',
             position: 'top'
         },
-	    // cutoutPercentage: 40,
 	    plugins: {
             datalabels: {
                 formatter: (value, ctx) => {

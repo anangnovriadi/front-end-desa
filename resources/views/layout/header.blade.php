@@ -37,6 +37,6 @@
 	        	<a class="nav-link gray-cus hov" href="#">Kontak</a>
 	      	</li>
     	</ul>
-  		<img src="{{ asset('img/logo_desa_cianaga.png') }}" class="logo" alt="">
+  		<img src="{{ asset('img/logo-cisarua.png') }}" class="logo" alt="">
   	</div>
 </header>
