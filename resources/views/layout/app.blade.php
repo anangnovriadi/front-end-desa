@@ -11,7 +11,7 @@
     <!-- <link rel="stylesheet" href="{{ asset('css/main.css') }}" /> -->
     @yield('add_css')
 </head>
-<body>
+<body onload="createCaptcha()">
     @include('layout.header')
     
     @yield('content')

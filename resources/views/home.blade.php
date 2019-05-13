@@ -86,11 +86,11 @@
 	</div>
 	<div class="container-fluid pcus d-flex">
 		<div class="col-md-2 runtext-container">
-			<p class="mt-1 mb-0 text-center font-weight-bold">Berita Desa : </p>
+			<p class="mt-1 mb-2 text-center font-weight-bold">Berita Desa : </p>
 		</div>
 		<div class="col-md-10 runtext-container">
 			<div class="main-runtext">
-				<marquee direction="" onmouseover="this.stop();" onmouseout="this.start();">
+				{{-- <marquee direction="" onmouseover="this.stop();" onmouseout="this.start();">
 					<div class="holder">
 					    <div class="text-container">
 					   		<i class="fa fa-info-circle" aria-hidden="true"></i> <a data-fancybox-group="gallery" class="fancybox" href="images/runtext/card.jpg" title="Electricians must provide business address and phone number">Pemanfaatan Lahan Kosong Yang Membawa Kecerian</a>
@@ -102,7 +102,14 @@
 					   		<i class="fa fa-info-circle" aria-hidden="true"></i> <a data-fancybox-group="gallery" class="fancybox" href="images/runtext/paid_electrician.jpg" title="Electrical work charges should only be paid to a licensed electrician">Perpisahan KKN Mahasiswa STAI Sukabumi Mengharukan</a>
 					    </div>
 					</div>
-				</marquee>
+				</marquee> --}}
+				<div id="nt-example1-container">
+					<ul id="nt-example1">
+						<li class="mb-1"><i class="fa fa-info-circle" aria-hidden="true"></i> <a data-fancybox-group="gallery" class="fancybox font-weight-bold" href="#">Pemanfaatan Lahan Kosong Yang Membawa Kecerian</a></li>
+						<li class="mb-1"><i class="fa fa-info-circle" aria-hidden="true"></i> <a data-fancybox-group="gallery" class="fancybox font-weight-bold" href="#">Tanpa Pamrih Tanpa Mengenal Waktu</a></li>
+						<li class="mb-1"><i class="fa fa-info-circle" aria-hidden="true"></i> <a data-fancybox-group="gallery" class="fancybox font-weight-bold" href="#">Perpisahan KKN Mahasiswa STAI Sukabumi Mengharukan</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -138,9 +145,9 @@
 							    	</div>
 							    </div>
 							    <div class="form-group row">
-							    	<label for="staticEmail" class="col-sm-3 col-form-label">Captcha</label>
+							    	<label for="staticEmail" class="col-sm-3"><div id="captcha"></div></label>
 							    	<div class="col-sm-9">
-							      		<input type="text" class="form-control" id="staticEmail" placeholder="Captcha">
+							      		<input type="text" class="form-control" id="cpatchaTextBox" placeholder="Captcha">
 							    	</div>
 							    </div>
 							    <div class="form-group row">
@@ -293,24 +300,82 @@
 		<div class="row">
 			<div class="col-md-6 mb-4">
 				<div class="pt-3 pb-4 bag-frm">
-					<canvas id="myBarChart"></canvas>
+					<div class="text-center">
+						<p class="font-weight-bold">Data Penduduk</p>	
+					</div>
+					<div class="d-flex justify-content-center">
+						<div class="pr-2">
+							<div class="text-center">
+								<button class="btn btn-warning" onclick="showDiagramPekerjaan()">Berdasarkan Pekerjaan</button>
+							</div>
+						</div>
+						<div class="pl-2">
+							<div class="text-center">
+								<button class="btn btn-info" onclick="showDiagramJenisKelamin()">Berdasarkan Jenis Kelamin</button>
+							</div>
+						</div>
+					</div>
+
+					<div id="pekerjaan" class="col pt-3">
+						<select id="selectDiagPekerjaan" class="custom-select custom-select-sm">
+							<option value="nul">Pilih Jenis Diagram</option>
+							<option value="pie">Pie Diagram</option>
+							<option value="bar">Bar Diagram</option>
+							<option value="line">Line Diagram</option>
+						</select>
+						<div>
+							<div id="nul" class="pk nul">
+							</div>
+							<div id="pie" class="pk pie">
+								<div class="pt-3 pb-4 bag-frm">
+									<canvas id="myBarChart"></canvas>
+								</div>
+							</div>
+							<div id="bar" class="pk bar">
+								<div class="pt-3 pb-4 bag-frm">
+									<canvas id="barChart"></canvas>
+								</div>
+							</div>
+							<div id="line" class="pk line">
+								<div class="pt-3 pb-4 bag-frm">
+									<canvas id="lineChart"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="jenisKelamin" class="col pt-3">
+						<select id="selectDiagJenisKelamin" class="custom-select custom-select-sm">
+							<option value="nul">Pilih Jenis Diagram</option>
+							<option value="pieJ">Pie Diagram</option>
+							<option value="barJ">Bar Diagram</option>
+							<option value="lineJ">Line Diagram</option>
+						</select>
+						<div>
+							<div id="nulJ" class="pk nulJ">
+							</div>
+							<div id="pieJ" class="pk pieJ">
+								<div class="pt-3 pb-4 bag-frm">
+									<canvas id="myBarChartJ"></canvas>
+								</div>
+							</div>
+							<div id="barJ" class="pk barJ">
+								<div class="pt-3 pb-4 bag-frm">
+									<canvas id="barChartJ"></canvas>
+								</div>
+							</div>
+							<div id="lineJ" class="pk lineJ">
+								<div class="pt-3 pb-4 bag-frm">
+									<canvas id="lineChartJ"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-6 mb-4">
-				<div class="embed-responsive embed-responsive-16by9">
-				  	<iframe width="auto" height="300" src="https://www.youtube.com/embed/ECPeWx1O08c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6 mb-4">
-				<div class="pt-3 pb-4 bag-frm">
-					<canvas id="barChart"></canvas>
-				</div>
-			</div>
-			<div class="col-md-6 mb-4">
-				<div class="pt-3 pb-4 bag-frm">
-					<canvas id="lineChart"></canvas>
+				<div style="height: 488px; width: 100%;" class="embed-responsive embed-responsive-16by9 shadow p-3 bg-white rounded">
+				  	<iframe src="https://www.youtube.com/embed/ECPeWx1O08c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -321,9 +386,33 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.5.0"></script>
 <script src="https://npmcdn.com/headroom.js@0.9.4/dist/headroom.min.js" type="text/javascript"></script>
+<script src="{{ asset('js/jquery.newsTicker.min.js') }}"></script>
 <script type="text/javascript">
-	var myElement = document.querySelector("header");
+$(function() {
+  $('#selectDiagPekerjaan').change(function(){
+	$('.pk').hide();
+	var jn = document.getElementById('selectDiagJenisKelamin');
+	var getV = jn.options[jn.selectedIndex].value;
 
+	if(getV == 'nul') {
+		console.log('joss')
+	}
+
+
+	console.log(getV);
+    $('#' + $(this).val()).show();
+  });
+});
+
+$(function() {
+  $('#selectDiagJenisKelamin').change(function(){
+	$('.pk').hide();
+	
+    $('#' + $(this).val()).show();
+  });
+});
+
+var myElement = document.querySelector("header");
 var headroom  = new Headroom(myElement, {
   "offset": 220,
   "tolerance": {
@@ -347,21 +436,23 @@ headroom.init();
 	var myChart = new Chart(ctx, {
 	    type: 'line',
 	    data: {
-	        labels: ["PNS", "Wiraswasta", "Petani"],
+	        labels: ["PNS", "Wiraswasta", "Petani", "Nelayan"],
 	        datasets: [{
 	            label: 'Data Penduduk Cisarua',
-	            data: [12, 19, 4],
+	            data: [12, 19, 4, 8],
 	            backgroundColor: [
-	                'rgba(255, 99, 132, 0.2)',
-	                'rgba(54, 162, 235, 0.2)',
-	                'rgba(255, 206, 86, 0.2)'
+	                'rgba(255, 255, 255, 0)',
+	                'rgba(255, 255, 255, 0)',
+					'rgba(255, 255, 255, 0)',
+					'rgba(255, 255, 255, 0)'
 	            ],
 	            borderColor: [
 	                'rgba(255, 99, 132, 1)',
 	                'rgba(54, 162, 235, 1)',
-	                'rgba(255, 206, 86, 1)'
+					'rgba(255, 206, 86, 1)',
+	                'rgba(54, 162, 235, 1)'					
 	            ],
-	            borderWidth: 1
+	            borderWidth: 2
 	        }]
 	    },
 	    options: {
@@ -380,21 +471,20 @@ headroom.init();
 	var myChart = new Chart(ctx, {
 	    type: 'bar',
 	    data: {
-	        labels: ["PNS", "Wiraswasta", "Petani"],
+	        labels: ["PNS", "Wiraswasta", "Petani", "Nelayan"],
 	        datasets: [{
 	            label: 'Data Penduduk Cisarua',
-	            data: [12, 19, 14],
+	            data: [12, 19, 14, 8],
 	            backgroundColor: [
 	                'rgba(255, 99, 132, 0.2)',
 	                'rgba(54, 162, 235, 0.2)',
-	                'rgba(255, 206, 86, 0.2)'
+					'rgba(255, 206, 80, 0.2)',
+	                'rgba(255, 206, 86, 0.2)'					
 	            ],
 	            borderColor: [
-	                'rgba(255, 99, 132, 1)',
-	                'rgba(54, 162, 235, 1)',
-	                'rgba(255, 206, 86, 1)'
+	                'rgba(255, 99, 132, 1)'
 	            ],
-	            borderWidth: 1
+				borderWidth: 1
 	        }]
 	    },
 	    options: {
@@ -417,16 +507,17 @@ headroom.init();
 	Chart.defaults.global.defaultFontSize = 16;
 
 	var data = {
-	    labels: ["PNS", "Wiraswasta", "Petani"],
+	    labels: ["PNS", "Wiraswasta", "Petani", "Nelayan"],
 	      	datasets: [
 	        {
 	            fill: true,
 	            backgroundColor: [
 	                '#A52A2A',
 	                '#ADD8E6',
-	                '#ECFF33'
+					'#ECFF33',
+					'#12CE12'
 	            ],
-	            data: [40, 30, 30],
+	            data: [40, 30, 20, 10],
 	            borderWidth: [2, 2]
 	        }
 	    ]
@@ -460,6 +551,195 @@ headroom.init();
 	    options: options,
 	    responsive: true
 	});
+
+
+	// Line J
+	var ctx = document.getElementById('lineChartJ').getContext('2d');
+	var myChart = new Chart(ctx, {
+	    type: 'line',
+	    data: {
+	        labels: ["Laki - laki", "Perempuan", "Lansia"],
+	        datasets: [{
+	            label: 'Data Penduduk Cisarua',
+	            data: [12, 20, 23],
+	            backgroundColor: [
+	                'rgba(255, 255, 255, 0)',
+					'rgba(255, 255, 255, 0)',
+	                'rgba(255, 255, 255, 0)'					
+	            ],
+	            borderColor: [
+	                'rgba(255, 99, 132, 1)'
+	            ],
+				borderWidth: 2
+	        }]
+	    },
+	    options: {
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                    beginAtZero: true
+	                }
+	            }]
+	        }
+	    }
+	});
+
+	// Bar J
+	var ctx = document.getElementById('barChartJ').getContext('2d');
+	var myChart = new Chart(ctx, {
+	    type: 'bar',
+	    data: {
+	        labels: ["Laki - laki", "Perempuan", "Lansia"],
+	        datasets: [{
+	            label: 'Data Penduduk Cisarua',
+	            data: [12, 24, 32],
+	            backgroundColor: [
+	                'rgba(255, 99, 132, 0.2)',
+	                'rgba(255, 206, 86, 0.2)'
+	            ],
+	            borderColor: [
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(54, 162, 235, 1)'
+	            ],
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                    beginAtZero: true
+	                }
+	            }]
+	        }
+	    }
+	});
+
+
+	// Pie J
+	var canvas = document.getElementById("myBarChartJ");
+	var ctx = canvas.getContext('2d');
+
+	Chart.defaults.global.defaultFontColor = 'black';
+	Chart.defaults.global.defaultFontSize = 16;
+
+	var data = {
+	    labels: ["Laki - laki", "Perempuan", "Lansia"],
+	      	datasets: [
+	        {
+	            fill: true,
+	            backgroundColor: [
+	                '#A52A2A',
+					'#ADD8E6',
+					'#D50057'
+	            ],
+	            data: [45, 30, 25],
+	            borderWidth: [2, 2]
+	        }
+	    ]
+	};
+
+	var options = {
+        title: {
+            display: true,
+            text: 'Data Penduduk Cisarua',
+            position: 'top'
+        },
+	    plugins: {
+            datalabels: {
+                formatter: (value, ctx) => {
+	                let sum = 0;
+	                let dataArr = ctx.chart.data.datasets[0].data;
+	                dataArr.map(data => {
+	                    sum += data;
+	                });
+	                let percentage = (value*100 / sum).toFixed()+"%";
+	                return percentage;
+	            },
+            	color: '#fff',
+            }
+        }
+	};
+
+	var myBarChart = new Chart(ctx, {
+	    type: 'pie',
+	    data: data,
+	    options: options,
+	    responsive: true
+	});
+
+	var nt_example1 = $('#nt-example1').newsTicker({
+		row_height: 30,
+		max_rows: 1,
+		duration: 4000
+	});
+
+	var code;
+	function createCaptcha() {
+		document.getElementById('captcha').innerHTML = "";
+		var charsArray = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@!#$%^&*";
+		var lengthOtp = 6;
+		var captcha = [];
+
+		for (var i = 0; i < lengthOtp; i++) {
+			var index = Math.floor(Math.random() * charsArray.length + 1);
+			if (captcha.indexOf(charsArray[index]) == -1)
+			captcha.push(charsArray[index]);
+			else i--;
+		}
+	
+		var canv = document.createElement("canvas");
+		canv.id = "captcha";
+		canv.width = 100;
+		canv.height = 50;
+		var ctx = canv.getContext("2d");
+		ctx.font = "25px Georgia";
+		ctx.strokeText(captcha.join(""), 0, 30);
+		code = captcha.join("");
+		document.getElementById("captcha").appendChild(canv);
+	}
+	
+	function validateCaptcha() {
+		event.preventDefault();
+		debugger
+		if (document.getElementById("cpatchaTextBox").value == code) {
+			alert("Valid Captcha")
+		}else{
+			alert("Invalid Captcha. try Again");
+			createCaptcha();
+		}
+	}
+
+
+	function showDiagramPekerjaan() {
+		var x = document.getElementById("pekerjaan");
+		var y = document.getElementById("jenisKelamin");
+
+		document.getElementById('selectDiagJenisKelamin').selectedIndex = "0";
+
+	  	if (x.style.display === "block") {
+	    	x.style.display = "none";
+	    	y.style.display = "block";
+	  	} else {
+	    	x.style.display = "block";
+	    	y.style.display = "none";
+	  	}
+	}
+
+	function showDiagramJenisKelamin() {
+		var x = document.getElementById("pekerjaan");
+		var y = document.getElementById("jenisKelamin");
+		
+		document.getElementById('selectDiagPekerjaan').selectedIndex = "0";
+
+	  	if (x.style.display === "block") {
+	    	x.style.display = "none";
+	    	y.style.display = "block";
+	  	} else {
+	    	x.style.display = "block";
+	    	y.style.display = "none";
+	  	}
+	}
 
 	function showPengaduan() {
 		var x = document.getElementById("pengaduan");

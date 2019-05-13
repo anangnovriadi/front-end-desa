@@ -16,6 +16,10 @@ body {
 	background-size: cover;
 }
 
+.red {
+	background: red;
+}
+
 .logo-2 {
 	width: 150px;
 	height: auto;
@@ -188,8 +192,8 @@ marquee {
 .runtext-container .holder {
 	position: relative;
 	overflow: visible;
-	display:inline;
-	float:left;
+	display: inline;
+	float: left;
 }
 
 .runtext-container .holder .text-container {
@@ -229,7 +233,16 @@ marquee {
 	background: black !important;
 }
 
-#pengaduan, #surat {
+#pengaduan, #surat, #pekerjaan, #jenisKelamin {
+	display: none;
+}
+
+#captcha {
+	background: white;
+	border-radius: 2px;
+}
+
+.pk {
 	display: none;
 }
 
@@ -332,6 +345,53 @@ marquee {
     -o-animation-name: slideDown;
     animation-name: slideDown;
 }
+
+/* nt-example1 */
+
+#nt-example1 {
+	/* max-width: 620px; */
+	margin: auto;
+}
+
+#nt-example1-container {
+	text-align: center;
+}
+
+#nt-example1-container i {
+	/* font-size: 36px; */
+	margin-left: 2px;
+	cursor: pointer;
+	-webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#nt-example1-container i:hover {
+	/* color: #333; */
+}
+
+#nt-example1 li {
+	/* color: #4e4e4e; */
+	/* background: #F2F2F2; */
+	overflow: hidden;
+	height: auto;
+	/* padding: 10px; */
+	padding-top: 5px;
+	/* line-height: 30px; */
+	list-style: none;
+	/* font-size: 24px; */
+	text-align: left;
+	/* border-bottom: 1px dotted #2c8162; */
+}
+
+#nt-example1 li:hover {
+	/* background: #FFF; */
+}
+
+
+/* nt-example2 */
 
 /*Footer*/
 
