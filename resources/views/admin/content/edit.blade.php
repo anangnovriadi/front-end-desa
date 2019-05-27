@@ -7,7 +7,7 @@
                 <h1>Form Edit Content</h1>
             </div>
             <div class="section-body">
-                <form action="{{ route('content.update', $contents->id) }}" method="post">
+                <form action="{{ route('content.update', $contents->id) }}" method="post" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     {{ method_field('PATCH') }}
                     <div class="row">
@@ -21,9 +21,10 @@
                                         <label>Header Top</label>
                                         <input type="text" name="header_top" class="form-control" placeholder="Header Top" value="{{ $contents->header_top }}">
                                     </div>
+                                    <img class="img-thumbnail" src="{{ asset('admin/img/'.$contents->logo_kanan_atas) }}" />
                                     <div class="form-group">
                                         <label>Logo Kanan Atas</label>
-                                        <input type="text" name="logo_kanan_atas" class="form-control" placeholder="Logo Kanan Atas" value="{{ $contents->logo_kanan_atas }}">
+                                        <input type="file" name="logo_kanan_atas" class="form-control" placeholder="Logo Kanan Atas" value="{{ $contents->logo_kanan_atas }}">
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat Bottom</label>

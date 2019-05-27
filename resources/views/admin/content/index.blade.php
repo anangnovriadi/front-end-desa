@@ -32,7 +32,7 @@
                                             <tr>
                                                 <td>{{ $no }}</td>
                                                 <td>{{ $content->header_top }}</td>
-                                                <td>{{ $content->logo_kanan_atas }}</td>
+                                                <td><img class="img-thumbnail" src="{{ asset('admin/img/'.$content->logo_kanan_atas) }}" /></td>
                                                 <td>{{ $content->alamat_bottom }}</td>
                                                 <td>{{ $content->author }}</td>
                                                 <td>
