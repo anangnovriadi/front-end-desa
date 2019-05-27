@@ -15,7 +15,7 @@ class CreateMapsTable extends Migration
     {
         Schema::create('maps', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('embed_url');
+            $table->text('embed_url');
             $table->timestamps();
         });
     }
