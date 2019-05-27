@@ -21,4 +21,8 @@ Route::prefix('admin')->group(function() {
     Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
     Route::post('/logout', 'Auth\LogoutController@logout')->name('logout');
     Route::get('/dashboard', 'Admin\DashboardController@view')->name('dashboard');
+
+    Route::get('/content', 'Admin\ContentController@view')->name('content.index');
+    Route::get('/content/edit/{id}', 'Admin\ContentController@edit')->name('content.edit');
+    Route::patch('/content/edit/{id}', 'Admin\ContentController@update')->name('content.update');
 });
