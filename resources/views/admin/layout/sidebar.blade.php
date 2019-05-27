@@ -9,14 +9,14 @@
         <ul class="sidebar-menu">
             <li class="menu-header">Main</li>
             <li class="nav-item dropdown active">
-                <a href="#" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+                <a href="{{ route('dashboard') }}" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
             <li class="menu-header">Content</li>
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>CMS</span></a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="{{ route('content.index') }}">Content</a></li>
-                    <li><a class="nav-link" href="{{ route('content.index') }}">Maps</a></li>
+                    <li><a class="nav-link" href="{{ route('map.index') }}">Maps</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">

@@ -25,4 +25,7 @@ Route::prefix('admin')->group(function() {
     Route::get('/content', 'Admin\ContentController@view')->name('content.index');
     Route::get('/content/edit/{id}', 'Admin\ContentController@edit')->name('content.edit');
     Route::patch('/content/edit/{id}', 'Admin\ContentController@update')->name('content.update');
+
+    Route::get('/map', 'Admin\MapController@view')->name('map.index');
+    Route::patch('/map/edit', 'Admin\MapController@update')->name('map.update');
 });
