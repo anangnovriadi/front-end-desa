@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Model\Content;
-use Image;
 
 class ContentController extends Controller
 {
@@ -22,18 +21,7 @@ class ContentController extends Controller
     }
 
     public function update(Request $request, $id) {
-        // $contents = Content::find($id);
-
-        // $contents->update([
-        //     'header_top' => $request->header_top,
-        //     'logo_kanan_atas' => $request->file('logo_kanan_atas'),
-        //     'alamat_bottom' => $request->alamat_bottom,
-        //     'author' => $request->author
-        // ]);
-
-        // return redirect()->route('content.index');
-
-        $requestData = $request->all();
+        $request = $request->all();
         $contents = Content::findOrFail($id);
 
         $pathToStore = public_path('admin/img');
@@ -52,11 +40,11 @@ class ContentController extends Controller
                 $file->move($pathToStore, $picture);
             }
 
-            $requestData['logo_kanan_atas'] = "{$picture}";
+            $request['logo_kanan_atas'] = "{$picture}";
 
         }
 
-        $contents->update($requestData);
+        $contents->update($request);
         
         return redirect()->route('content.index');
     }
