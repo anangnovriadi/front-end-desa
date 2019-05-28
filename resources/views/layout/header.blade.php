@@ -4,7 +4,7 @@
   	</button>
   	<div class="nav-col bg-light cus-con pt-2 pb-2">
 	  	<div class="mx-auto text-center">
-	  		<p class="m-0 text-white font-weight-bold">Portal Layanan Publik Pemerintah Desa Cisarua</p>
+	  		<p class="m-0 text-white font-weight-bold">{{ $contents[0]->header_top }}</p>
 	  		<!-- <p class="m-0 text-white font-weight-bold">Pemeritah Desa Cimerang</p> -->
 	  		<!-- <p class="m-0 text-white font-weight-bold">Desa Cimerang, Purabaya, Sukabumi, Jawa Barat</p> -->
 	  	</div>
@@ -37,6 +37,6 @@
 	        	<a class="nav-link gray-cus hov" href="#">Kontak</a>
 	      	</li>
     	</ul>
-  		<img src="{{ asset('img/logo-cisarua.png') }}" class="logo" alt="">
+  		<img src="{{ asset('admin/img/'.$contents[0]->logo_kanan_atas) }}" class="logo" alt="">
   	</div>
 </header>

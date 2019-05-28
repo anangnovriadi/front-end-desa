@@ -11,9 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+Route::get('/', 'Front\HomeController@view');
+// Route::get('/', 'Front\HomeController@maps');
 
 // Admin
 Route::prefix('admin')->group(function() {

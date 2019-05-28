@@ -21,7 +21,7 @@ class ContentController extends Controller
     }
 
     public function update(Request $request, $id) {
-        $request = $request->all();
+        $request_all = $request->all();
         $contents = Content::findOrFail($id);
 
         $pathToStore = public_path('admin/img');
@@ -40,11 +40,11 @@ class ContentController extends Controller
                 $file->move($pathToStore, $picture);
             }
 
-            $request['logo_kanan_atas'] = "{$picture}";
+            $request_all['logo_kanan_atas'] = "{$picture}";
 
         }
 
-        $contents->update($request);
+        $contents->update($request_all);
         
         return redirect()->route('content.index');
     }

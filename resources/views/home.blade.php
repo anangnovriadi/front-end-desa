@@ -5,6 +5,7 @@
 <section class="mb-4 mt-top-i">
 	<div class="row container-fluid mx-auto pcus-top">
 		<div class="col-md-10 mb-4">
+				{{-- {{ dd($contents[0]) }} --}}
 			<div class="banner-car">
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
