@@ -8,11 +8,12 @@
         </div>
         <ul class="sidebar-menu">
             <li class="menu-header">Main</li>
-            <li class="nav-item dropdown active">
+            {{-- {{ dd(Request::segment(2)) }} --}}
+            <li class="nav-item dropdown {{ Request::segment(2) === 'dashboard' ? 'active' : null }}">
                 <a href="{{ route('dashboard') }}" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
             <li class="menu-header">Content</li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {{ Request::segment(2) === 'content' || Request::segment(2) === 'map' ? 'active' : null }}">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>CMS</span></a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="{{ route('content.index') }}">Content</a></li>
