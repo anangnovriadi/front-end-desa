@@ -31,4 +31,7 @@ Route::prefix('admin')->group(function() {
 
     Route::get('/map', 'Admin\MapController@view')->name('map.index');
     Route::patch('/map/edit', 'Admin\MapController@update')->name('map.update');
+
+    Route::get('/youtube', 'Admin\YoutubeController@view')->name('youtube.index');
+    Route::patch('/youtube/edit', 'Admin\YoutubeController@update')->name('youtube.update');
 });
