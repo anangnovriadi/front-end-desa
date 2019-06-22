@@ -17,6 +17,7 @@
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="{{ route('content.index') }}">Content</a></li>
                     <li><a class="nav-link" href="{{ route('map.index') }}">Maps</a></li>
+                    <li><a class="nav-link" href="{{ route('youtube.index') }}">Potensi Desa</a></li>
                     <li><a class="nav-link" href="{{ route('youtube.index') }}">Youtube</a></li>
                 </ul>
             </li>
