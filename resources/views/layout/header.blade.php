@@ -13,13 +13,13 @@
   		<img src="{{ asset('img/Pemda_Kabupaten_Sukabumi.png') }}" class="logo-2" alt="">
     	<ul class="navbar-nav mx-auto">
 	      	<li class="nav-item mr-2 ml-2">
-	        	<a class="nav-link gray-cus hov" href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
+	        	<a class="nav-link gray-cus hov" href="{{ route('home') }}"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
 	      	</li>
 	      	<li class="nav-item mr-2 ml-2">
 	        	<a class="nav-link gray-cus hov" href="#">Profil Desa</a>
 	      	</li>
 	       	<li class="nav-item mr-2 ml-2">
-	        	<a class="nav-link gray-cus hov" href="#">Produk Hukum</a>
+	        	<a class="nav-link gray-cus hov" href="{{ route('produk-hukum') }}">Produk Hukum</a>
 	      	</li>
 	      	<li class="nav-item mr-2 ml-2">
 	        	<a class="nav-link gray-cus hov" href="#">Pelayanan Publik</a>

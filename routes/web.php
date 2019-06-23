@@ -15,8 +15,8 @@
 //     return view('home');
 // });
 
-Route::get('/', 'Front\HomeController@view');
-// Route::get('/', 'Front\HomeController@maps');
+Route::get('/', 'Front\HomeController@view')->name('home');
+Route::get('/produk-hukum', 'Front\ProdukHukumController@view')->name('produk-hukum');
 
 // Admin
 Route::prefix('admin')->group(function() {
