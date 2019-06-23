@@ -12,12 +12,12 @@
                 <a href="{{ route('dashboard') }}" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
             <li class="menu-header">Content</li>
-            <li class="nav-item dropdown {{ Request::segment(2) === 'content' || Request::segment(2) === 'map' || Request::segment(2) === 'youtube' ? 'active' : null }}">
+            <li class="nav-item dropdown {{ Request::segment(2) === 'content' || Request::segment(2) === 'map' || Request::segment(2) === 'youtube' | Request::segment(2) === 'potensi' ? 'active' : null }}">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>CMS</span></a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="{{ route('content.index') }}">Content</a></li>
                     <li><a class="nav-link" href="{{ route('map.index') }}">Maps</a></li>
-                    <li><a class="nav-link" href="{{ route('youtube.index') }}">Potensi Desa</a></li>
+                    <li><a class="nav-link" href="{{ route('potensi.index') }}">Potensi Desa</a></li>
                     <li><a class="nav-link" href="{{ route('youtube.index') }}">Youtube</a></li>
                 </ul>
             </li>

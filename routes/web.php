@@ -34,4 +34,11 @@ Route::prefix('admin')->group(function() {
 
     Route::get('/youtube', 'Admin\YoutubeController@view')->name('youtube.index');
     Route::patch('/youtube/edit', 'Admin\YoutubeController@update')->name('youtube.update');
+
+    Route::get('/potensi', 'Admin\PotensiController@view')->name('potensi.index');
+    Route::get('/potensi/create', 'Admin\PotensiController@create')->name('potensi.create');
+    Route::post('/potensi/store', 'Admin\PotensiController@store')->name('potensi.store');
+    Route::get('/potensi/edit/{id}', 'Admin\PotensiController@edit')->name('potensi.edit');
+    Route::patch('/potensi/update/{id}', 'Admin\PotensiController@update')->name('potensi.update');
+    Route::delete('/potensi/delete/{id}', 'Admin\PotensiController@delete')->name('potensi.destroy');
 });
