@@ -270,26 +270,13 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-3 mb-4">
-				<div class="module mage shadow p-3 bg-white rounded" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/pertanian.jpg') }});">
-				  	<p>Potensi Pertanian</p>
+			@foreach ($potensis as $potensi)
+				<div class="col-md-3 mb-4">
+					<div class="module mage shadow p-3 bg-white rounded" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('admin/'.$potensi->img_thumb) }});">
+						<p>{{ $potensi->name }}</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-3 mb-4">
-				<div class="module mage shadow p-3 bg-white rounded" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/perikanan.jpg') }});">
-				  	<p>Potensi Perikanan</p>
-				</div>
-			</div>
-			<div class="col-md-3 mb-4">
-				<div class="module mage shadow p-3 bg-white rounded" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/peternakan.jpg') }});">
-				  	<p>Potensi Peternakan</p>
-				</div>
-			</div>
-			<div class="col-md-3 mb-4">
-				<div class="module mage shadow p-3 bg-white rounded" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{  asset('img/jalan.jpg') }});">
-				  	<p>Potensi Bumdes</p>
-				</div>
-			</div>
+			@endforeach
 		</div>
 	</div>
 	<div class="pt-5 container-fluid pcus">
