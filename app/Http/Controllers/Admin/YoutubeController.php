@@ -8,6 +8,10 @@ use App\Model\Youtube;
 
 class YoutubeController extends Controller
 {
+    public function __construct() {
+        $this->middleware('auth');
+    }
+    
     public function update(Request $request) {
         $id = $request->id;
         $youtube = Youtube::find($id);
