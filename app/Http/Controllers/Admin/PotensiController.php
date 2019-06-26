@@ -8,9 +8,9 @@ use App\Model\Potensi;
 
 class PotensiController extends Controller
 {
-    public function __construct() {
-        $this->middleware('auth');
-    }
+    // public function __construct() {
+    //     $this->middleware('auth');
+    // }
     
     public function view() {
         $potensis = Potensi::all();

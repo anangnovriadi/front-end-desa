@@ -8,9 +8,9 @@ use App\Model\Map;
 
 class MapController extends Controller
 {   
-    public function __construct() {
-        $this->middleware('auth');
-    }
+    // public function __construct() {
+    //     $this->middleware('auth');
+    // }
 
     public function update(Request $request) {
         $id = $request->id;
