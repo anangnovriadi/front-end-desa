@@ -41,4 +41,11 @@ Route::prefix('admin')->group(function() {
     Route::get('/potensi/edit/{id}', 'Admin\PotensiController@edit')->name('potensi.edit');
     Route::patch('/potensi/update/{id}', 'Admin\PotensiController@update')->name('potensi.update');
     Route::delete('/potensi/delete/{id}', 'Admin\PotensiController@delete')->name('potensi.destroy');
+
+    Route::get('/perangkat', 'Admin\PerangkatController@view')->name('perangkat.index');
+    Route::get('/perangkat/create', 'Admin\PerangkatController@create')->name('perangkat.create');
+    Route::post('/perangkat/create', 'Admin\PerangkatController@store')->name('perangkat.store');
+    Route::get('/perangkat/edit/{id}', 'Admin\PerangkatController@edit')->name('perangkat.edit');
+    Route::patch('/perangkat/edit/{id}', 'Admin\PerangkatController@update')->name('perangkat.update');
+    Route::delete('/perangkat/delete/{id}', 'Admin\PerangkatController@destroy')->name('perangkat.destroy');
 });

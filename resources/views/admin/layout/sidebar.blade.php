@@ -12,13 +12,14 @@
                 <a href="{{ route('dashboard') }}" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
             <li class="menu-header">Content</li>
-            <li class="nav-item dropdown {{ Request::segment(2) === 'content' || Request::segment(2) === 'map' || Request::segment(2) === 'youtube' | Request::segment(2) === 'potensi' ? 'active' : null }}">
+            <li class="nav-item dropdown {{ Request::segment(2) === 'content' || Request::segment(2) === 'map' || Request::segment(2) === 'youtube' || Request::segment(2) === 'potensi' || Request::segment(2) === 'perangkat' ? 'active' : null }}">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>CMS</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="{{ route('content.index') }}">Content</a></li>
-                    <li><a class="nav-link" href="{{ route('map.index') }}">Maps</a></li>
-                    <li><a class="nav-link" href="{{ route('potensi.index') }}">Potensi Desa</a></li>
-                    <li><a class="nav-link" href="{{ route('youtube.index') }}">Youtube</a></li>
+                    <li class="{{ Request::segment(2) === 'content' ? 'active' : '' }}"><a class="nav-link" href="{{ route('content.index') }}">Content</a></li>
+                    <li class="{{ Request::segment(2) === 'map' ? 'active' : '' }}"><a class="nav-link" href="{{ route('map.index') }}">Maps</a></li>
+                    <li class="{{ Request::segment(2) === 'potensi' ? 'active' : '' }}"><a class="nav-link" href="{{ route('potensi.index') }}">Potensi Desa</a></li>
+                    <li class="{{ Request::segment(2) === 'youtube' ? 'active' : '' }}"><a class="nav-link" href="{{ route('youtube.index') }}">Youtube</a></li>
+                    <li class="{{ Request::segment(2) === 'perangkat' ? 'active' : '' }}"><a class="nav-link" href="{{ route('perangkat.index') }}">Perangkat Desa</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
