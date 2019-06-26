@@ -55,10 +55,12 @@
 		</div>
 		<div class="col-md-2">
 			<div class="pb-3">
+				@foreach ($kepala as $item)
 				<div class="p-2 text-center" style="background: rgba(0,0,0,.05); border-radius: 2px;">
-					<p class="mb-0 font-weight-bold">Kepala Desa</p>
+					<p class="mb-0 font-weight-bold">{{ $item->jabatan }}</p>
 				</div>
-				<img src="{{ asset('img/kadis.jpg') }}" class="d-block w-100 banner-left" alt="...">
+				<img src="{{ asset('admin/img/'.$item->img_thumb) }}" class="d-block w-100 banner-left" alt="...">
+				@endforeach
 			</div>
 			<div class="pb-3">
 				<div class="p-2 text-center" style="background: rgba(0,0,0,.05); border-radius: 2px;">
@@ -66,12 +68,24 @@
 				</div>
 				<div id="carouselExampleIndicatorss" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
-					    <li data-target="#carouselExampleIndicatorss" data-slide-to="0" class="active"></li>
-					    <li data-target="#carouselExampleIndicatorss" data-slide-to="1"></li>
-					    <li data-target="#carouselExampleIndicatorss" data-slide-to="2"></li>
+						@foreach ($perangkats as $perangkat)
+							@if($perangkat[0])
+								<li data-target="#carouselExampleIndicatorss" data-slide-to="0" class="active"></li>
+							@else
+								<li data-target="#carouselExampleIndicatorss" data-slide-to="1"></li>
+							@endif
+						@endforeach
 					</ol>
 				  	<div class="carousel-inner">
-				    	<div class="carousel-item active">
+						<div class="carousel-item active">
+							<img src="{{ asset('admin/img/'.$perangkats[0]->img_thumb) }}" class="d-block w-100 banner-left" alt="...">
+						</div>
+						@foreach ($perangkats as $perangkat)
+							<div class="carousel-item">
+								<img src="{{ asset('admin/img/'.$perangkat->img_thumb) }}" class="d-block w-100 banner-left" alt="...">
+						  	</div>
+						@endforeach
+				    	{{-- <div class="carousel-item active">
 				      		<img src="{{ asset('img/kadis3.jpg') }}" class="d-block w-100 banner-left" alt="...">
 				    	</div>
 				    	<div class="carousel-item">
@@ -79,7 +93,7 @@
 				    	</div>
 				    	<div class="carousel-item">
 				      		<img src="{{ asset('img/staff2.jpg') }}" class="d-block w-100 banner-left" alt="...">
-				    	</div>
+				    	</div> --}}
 				  	</div>
 				</div>
 			</div>			
